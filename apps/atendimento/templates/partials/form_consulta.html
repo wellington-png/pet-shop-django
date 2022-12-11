@@ -1,0 +1,59 @@
+{%if user.fucionario_type == 'veterinario' %}
+<script>
+  $(document).ready(function(){
+      $("#add-item").click(function(ev) {
+          ev.preventDefault();
+          var count = $('#order').children().length;
+          var tmplMarkup = $("#item-order").html();
+          var compiledTmpl = tmplMarkup.replace(/__prefix__/g, count);
+          $("div#order").append(compiledTmpl);
+
+          // update form count
+          $('#id_product-TOTAL_FORMS').attr('value', count + 1);
+
+          // some animate to scroll to view our new form
+          $('html, body').animate({
+              scrollTop: $("#add-item").position().top-200
+          }, 800);
+      });
+  });
+</script>
+<div class="col-md-12 grid-margin stretch-card ">
+    <div class="card">
+      <div class="card-body">
+        <h4 class="card-title">Cadastro de consulta</h4>
+        <form class="forms-sample" method="post" action="{% url 'apps:atendimento:consulta_create' %}">
+            <div class="form-group">
+            {% csrf_token %}
+            {{ formset.management_form }}
+            {{form}}
+
+            <legend class="lead mt-5">Adicionar serviço</legend>
+
+                <div id="" class="">
+                    {% for item_order_form in formset %}
+                        <div id="item-{{ forloop.counter0 }}">
+                            {{ item_order_form }}
+                        </div>
+                    {% endfor %}
+                </div>
+
+                <!-- <a class="btn btn-info" id="add-item"><i class="fa fa-plus"></i> Add Item</a> -->
+
+                <!-- <div class="form-inline buttons">
+                  <a href="" class="btn btn-warning pull-right"><i class="fa fa-times"></i> Cancelar</a>
+                  <button class="btn btn-primary pull-right" value="Save"><i class="fa fa-floppy-o"></i> Salvar</button>
+              </div> -->
+
+            <button type="submit" class="btn btn-primary mr-2">Cadastrar</button>
+        </div>
+        </form>
+      </div>
+      <script type="text/html" id="item-order">
+        <div id="item-__prefix__" style="margin-top: 10px">
+                {{ formset.empty_form }}
+        </div>
+    </script>
+    </div>
+  </div>
+{%endif%}

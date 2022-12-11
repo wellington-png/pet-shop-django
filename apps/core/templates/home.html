@@ -1,0 +1,8 @@
+{%extends "base.html"%}
+{% load static %}
+{%block content%}
+        {% include 'partials/table_consulta.html' %}
+        {% include 'partials/table_servico.html' %}
+        {% include 'partials/table_compra.html' %}
+{%endblock%}
+{%block sidebar%} {% include 'partials/sidebar.html' %} {%endblock%}
