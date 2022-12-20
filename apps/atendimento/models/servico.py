@@ -11,6 +11,7 @@ class Servico(BaseModel):
     class Meta:
         verbose_name = 'Serviço'
         verbose_name_plural = 'Serviços'
+        ordering = ['-data_servico']
 
     def __str__(self):
         return self.pet.nome

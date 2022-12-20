@@ -8,3 +8,11 @@ class Compra(BaseModel):
     atendente = ForeignKey('account.Atendente', verbose_name='Atendente', on_delete=CASCADE)
     valor_total = DecimalField(verbose_name='Valor Total', max_digits=10, decimal_places=2)
     data_compra = DateField(verbose_name='Data da Compra', blank=True, null=True)
+
+    def __str__(self):
+        return self.cliente.nome
+
+    class Meta:
+        verbose_name = 'Compra'
+        verbose_name_plural = 'Compras'
+        ordering = ['-data_compra']
