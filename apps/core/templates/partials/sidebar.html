@@ -28,8 +28,8 @@
         </a>
         <div class="collapse" id="products">
           <ul class="nav flex-column sub-menu">
-            <li class="nav-item"> <a class="nav-link" href="pages/samples/login.html"> Cadastrar produto </a></li>
-            <li class="nav-item"> <a class="nav-link" href="pages/samples/login.html"> Listar produtos </a></li>
+            <li class="nav-item"> <a class="nav-link" href="{% url 'apps:venda:produto_create' %}"> Cadastrar produto </a></li>
+            <li class="nav-item"> <a class="nav-link" href="{% url 'apps:venda:produto_list' %}"> Listar produtos </a></li>
           </ul>
         </div>
       </li>
@@ -70,8 +70,8 @@
       </a>
       <div class="collapse" id="type_servece">
         <ul class="nav flex-column sub-menu">
-          <li class="nav-item"> <a class="nav-link" href="pages/samples/login.html"> Cadastrar tipo de serviço </a></li>
-          <li class="nav-item"> <a class="nav-link" href="pages/samples/login.html"> Listar tipo de serviço </a></li>
+          <li class="nav-item"> <a class="nav-link" href="{% url 'apps:atendimento:tipo_servico_create' %}"> Cadastrar tipo de serviço </a></li>
+          <li class="nav-item"> <a class="nav-link" href="{% url 'apps:atendimento:tipo_servico_list' %}"> Listar tipo de serviço </a></li>
         </ul>
       </div>
     </li>

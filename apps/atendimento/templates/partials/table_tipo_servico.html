@@ -23,45 +23,27 @@
                 #id
               </th>
               <th>
-                PET
+                Descrição
               </th>
               <th>
-                valor
+                Preço
               </th>
               <th>
-                data da consulta
-              </th>
-              <th>
-                veterinario
-              </th>
-              <th>
-                diagnostico
-              </th>
-              <th>
-                ações
+                Ações
               </th>
             </tr>
           </thead>
           <tbody>
-            {% for consulta in consultas %}
+            {% for tipo in tipos %}
             <tr>
               <td class="py-1">
-                #{{consulta.id}}
+                #{{tipo.id}}
               </td>
               <td class="py-1">
-                {{consulta.pet.nome}}
+                {{tipo.descricao}}
               </td>
               <td>
-                {{consulta.valor_total}}
-              </td>
-              <td>
-                {{consulta.data_consulta}}
-              </td>
-              <td>
-                {{consulta.veterinario}}
-              </td>
-              <td>
-                {{consulta.diagnostico}}
+                {{tipo.preco}}
               </td>
               <td>
                 <div class="dropdown">

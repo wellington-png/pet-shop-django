@@ -4,13 +4,13 @@
     <div class="card-body">
       <div class="d-sm-flex justify-content-between align-items-start">
         <div>
-          <h4 class="card-title card-title-dash">Ultimas consultas</h4>
+          <h4 class="card-title card-title-dash">Produtos</h4>
         </div>
         <div>
           <div class="dropdown">
-            <a href="{% url 'apps:atendimento:consulta_create' %}">
+            <a href="{% url 'apps:venda:produto_create' %}">
               <button class="btn btn-primary btn-lg text-white mb-0 me-0" type="button"><i
-                  class="mdi mdi-plus"></i>Adicionar consulta</button>
+                  class="mdi mdi-plus"></i>Adicionar produtos</button>
             </a>
           </div>
         </div>
@@ -23,45 +23,33 @@
                 #id
               </th>
               <th>
-                PET
+                Nome
               </th>
               <th>
-                valor
+                Descriçao
               </th>
               <th>
-                data da consulta
+                Preço
               </th>
               <th>
-                veterinario
-              </th>
-              <th>
-                diagnostico
-              </th>
-              <th>
-                ações
+                Ações
               </th>
             </tr>
           </thead>
           <tbody>
-            {% for consulta in consultas %}
+            {% for produto in produtos %}
             <tr>
               <td class="py-1">
-                #{{consulta.id}}
+                #{{produto.id}}
               </td>
               <td class="py-1">
-                {{consulta.pet.nome}}
+                {{produto.nome}}
               </td>
               <td>
-                {{consulta.valor_total}}
+                {{produto.descricao}}
               </td>
               <td>
-                {{consulta.data_consulta}}
-              </td>
-              <td>
-                {{consulta.veterinario}}
-              </td>
-              <td>
-                {{consulta.diagnostico}}
+                {{produto.preco}}
               </td>
               <td>
                 <div class="dropdown">
@@ -70,7 +58,7 @@
                     <i class="mdi mdi-dots-vertical"></i>
                   </button>
                   <div class="dropdown-menu" aria-labelledby="dropdownMenuIconButton3">
-                    <a class="dropdown-item" href="">
+                    <a class="dropdown-item"  href="{% url 'apps:venda:produto_update' produto.id %}">
                       editar
                     </a>
                     <a class="dropdown-item" href="#">apagar</a>
