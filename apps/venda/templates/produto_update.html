@@ -3,7 +3,20 @@
 {% load static %}
 
 {%block content%}
-{% include 'partials/form_produto.html' %}
+<div class="col-md-12 grid-margin stretch-card ">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">Atualizar produto</h4>
+            <form class="forms-sample" method="post" action="{% url 'apps:venda:produto_update' object.id %}">
+                <div class="form-group">
+                    {% csrf_token %}
+                    {{form}} <!-- form de compra -->
+                    <button type="submit" class="btn btn-primary mr-2">Cadastrar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
 {%endblock%}
 
 {%block sidebar%} {% include 'partials/sidebar.html' %} {%endblock%}

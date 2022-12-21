@@ -19,7 +19,7 @@ class LoginView(View):
                 self.request,
                 'Usuário e senha são obrigatórios.'
             )
-            return redirect('login')
+            return redirect('apps:core:login')
 
         usuario = authenticate(self.request, username=username, password=password)
 
@@ -29,7 +29,7 @@ class LoginView(View):
                 self.request,
                 'Usuário ou senha inválidos.'
             )
-            return redirect('login')
+            return redirect('apps:core:login')
 
         login(self.request, user=usuario)
 

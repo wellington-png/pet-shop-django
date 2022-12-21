@@ -1,5 +1,5 @@
 from django.contrib.auth.models import AbstractBaseUser, PermissionsMixin, BaseUserManager
-from django.db.models import CharField, EmailField, BooleanField
+from django.db.models import CharField, EmailField, BooleanField, DecimalField
 
 from apps.core.models import BaseModel
 
@@ -49,8 +49,13 @@ class Funcionario(AbstractBaseUser, PermissionsMixin, BaseModel):
     username = CharField("Username", unique=True, max_length=255)
     is_staff = BooleanField("status de admin", default=False)
     is_active = BooleanField("ativo", default=True)
-    fucionario_type = CharField("tipo", max_length=255, default='funcionario')
-
+    cpf = CharField("CPF", max_length=255, unique=True)
+    logradouro = CharField("logradouro", max_length=255)
+    cidade = CharField("cidade", max_length=255)
+    uf = CharField("UF", max_length=255)
+    cep = CharField("CEP", max_length=255)
+    contato = CharField("contato", max_length=255)
+    salario = DecimalField("salário", max_digits=10, decimal_places=2, default=0.00)
     objects = UserManager()
 
     USERNAME_FIELD = "username"

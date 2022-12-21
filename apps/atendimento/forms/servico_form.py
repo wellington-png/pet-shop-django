@@ -14,7 +14,6 @@ class ServicoForm(ModelForm):
     def __init__(self, *args, **kwargs):
         super(ServicoForm, self).__init__(*args, **kwargs)
         self.fields['pet'].queryset = Pet.objects.all()
-        self.fields['tecnico'].queryset = Tecnico.objects.filter(fucionario_type='tecnico')
 
         self.fields['pet'].widget.attrs['class'] = 'form-control js-example-basic-single w-100 select2-hidden-accessible'
         self.fields['tecnico'].widget.attrs['class'] = 'form-control js-example-basic-single w-100 select2-hidden-accessible'

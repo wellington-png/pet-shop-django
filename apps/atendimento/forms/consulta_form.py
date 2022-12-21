@@ -14,8 +14,6 @@ class ConsultaForm(ModelForm):
     def __init__(self, *args, **kwargs):
         super(ConsultaForm, self).__init__(*args, **kwargs)
         self.fields['pet'].queryset = Pet.objects.all()
-        self.fields['veterinario'].queryset = Veterinario.objects.filter(fucionario_type='veterinario')
-
         self.fields['pet'].widget.attrs['class'] = 'form-control js-example-basic-single w-100 select2-hidden-accessible'
         self.fields['veterinario'].widget.attrs['class'] = 'form-control js-example-basic-single w-100 select2-hidden-accessible'
         self.fields['sintomas'].widget.attrs['class'] = 'form-control'

@@ -1,4 +1,4 @@
-from django.views.generic import CreateView, UpdateView, ListView, DetailView, View
+from django.views.generic import CreateView, UpdateView, ListView, DeleteView
 from apps.atendimento.forms import ConsultaForm, ItemConsultaForm
 from django.shortcuts import redirect
 from apps.atendimento.models import Consulta, ItemConsulta
@@ -17,7 +17,6 @@ class ConsultaCreateView(LoginRequiredMixin, CreateView):
     def form_valid(self, form):
         self.object = form.save()
         formset = self.item_order_formset(self.request.POST, instance=self.object)
-        print(formset.data)
         if formset.is_valid():
             formset.save()
             return redirect(self.success_url)
@@ -29,7 +28,6 @@ class ConsultaCreateView(LoginRequiredMixin, CreateView):
         context['formset'] = self.item_order_formset(instance=self.object)
         context['title'] = 'Cadastrar Serviço'
         context['action'] = 'add'
-        print(context['formset'], '4567890-++++++++++++++++++++++')
         return context
     
     
@@ -41,17 +39,43 @@ class ConsultaListView(LoginRequiredMixin, ListView):
     paginate_by = 10
 
 
+class ConsultaUpdateView(LoginRequiredMixin, UpdateView):
+    model = Consulta
+    template_name = 'consulta_create_up.html'
+    success_url = '/consulta/list'
+    form_class = ConsultaForm
 
-    
+    item_order_formset = inlineformset_factory(Consulta, ItemConsulta, form=ItemConsultaForm, extra=1, can_delete=True)
 
-# class ConsultaUpdateView(UpdateView):
-#     model = Consulta
-#     fields = '__all__'
-#     template_name = 'consulta_form.html'
-#     success_url = '/consulta/list'
+    def form_valid(self, form):
+        self.object = form.save()
+        formset = self.item_order_formset(self.request.POST, instance=self.object)
+        if formset.is_valid():
+            formset.save()
+            return redirect(self.success_url)
+        else:
+            return self.render_to_response(self.get_context_data(form=form))
 
+    def get_context_data(self, **kwargs):
+        context = super(ConsultaUpdateView, self).get_context_data(**kwargs)
+        context['formset'] = self.item_order_formset(instance=self.object)
+        context['title'] = 'Editar Serviço'
+        context['action'] = 'edit'
+        print(context)
+        return context
 
-# class ConsultaDetailView(DetailView):
-#     model = Consulta
-#     template_name = 'consulta_detail.html'
-#     context_object_name = 'consulta'
+class ConsultaDeleteView(LoginRequiredMixin, DeleteView):
+    model = Consulta
+    template_name = 'consulta_delete.html'
+    success_url = '/consulta/list'
+
+    def delete(self, request, *args, **kwargs):
+        self.object = self.get_object()
+        self.object.delete()
+        return redirect(self.success_url)
+
+    def get_context_data(self, **kwargs):
+        context = super(ConsultaDeleteView, self).get_context_data(**kwargs)
+        context['title'] = 'Remover Serviço'
+        context['action'] = 'delete'
+        return context
