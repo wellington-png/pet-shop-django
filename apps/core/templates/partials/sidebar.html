@@ -7,10 +7,37 @@
         <span class="menu-title">Dashboard</span>
       </a>
     </li>
+    <li class="nav-item nav-category">Cliente e pet</li>
+    <li class="nav-item">
+      <a class="nav-link" data-bs-toggle="collapse" href="#cli" aria-expanded="false" aria-controls="cli">
+        <i class="menu-icon mdi mdi mdi-account-group"></i>
+        <span class="menu-title">Cliente</span>
+        <i class="menu-arrow"></i> 
+      </a>
+      <div class="collapse" id="cli">
+        <ul class="nav flex-column sub-menu">
+          <li class="nav-item"> <a class="nav-link" href="{% url 'apps:venda:compra_create' %}">Cadastrar cliente</a></li>
+          <li class="nav-item"> <a class="nav-link" href="{% url 'apps:venda:compra_list' %}">Listar clinete</a></li>
+        </ul>
+      </div>
+      <li class="nav-item">
+        <a class="nav-link" data-bs-toggle="collapse" href="#pet" aria-expanded="false" aria-controls="pet">
+          <i class="menu-icon mdi mdi mdi-dog"></i>
+          <span class="menu-title">PET</span>
+          <i class="menu-arrow"></i>
+        </a>
+        <div class="collapse" id="pet">
+          <ul class="nav flex-column sub-menu">
+            <li class="nav-item"> <a class="nav-link" href="{% url 'apps:venda:produto_create' %}"> Cadastrar pet </a></li>
+            <li class="nav-item"> <a class="nav-link" href="{% url 'apps:venda:produto_list' %}"> Listar pet </a></li>
+          </ul>
+        </div>
+      </li>
+    </li>
     <li class="nav-item nav-category">Vendas de produtos</li>
     <li class="nav-item">
       <a class="nav-link" data-bs-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
-        <i class="menu-icon mdi mdi mdi-currency-usd"></i>
+        <i class="menu-icon mdi mdi mdi-cash"></i>
         <span class="menu-title">Vendas</span>
         <i class="menu-arrow"></i> 
       </a>

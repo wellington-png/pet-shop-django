@@ -1,30 +1,44 @@
 from apps.account.models import Tecnico
-from django.contrib.auth.forms import UserCreationForm,  UsernameField
+from django.contrib.auth.forms import UserCreationForm, UsernameField
 
 
 class TecnicoForm(UserCreationForm):
     class Meta:
         model = Tecnico
-        fields = ('username', 'name', 'email', 'password1', 'password2', 'is_active', 'is_staff', 'is_superuser', 'crta')
-        field_classes = {'username': UsernameField}
+        fields = (
+            "name",
+            "email",
+            "username",
+            "is_staff",
+            "is_active",
+            "cpf",
+            "logradouro",
+            "cidade",
+            "uf",
+            "cep",
+            "contato",
+            "salario",
+            "crta",
+            "is_superuser"
+        )
+        field_classes = {"username": UsernameField}
 
     def __init__(self, *args, **kwargs):
         super(UserCreationForm, self).__init__(*args, **kwargs)
-        self.fields['username'].widget.attrs.update({'class': 'form-control'})
-        self.fields['name'].widget.attrs.update({'class': 'form-control'})
-        self.fields['email'].widget.attrs.update({'class': 'form-control'})
-        self.fields['password1'].widget.attrs.update({'class': 'form-control'})
-        self.fields['password2'].widget.attrs.update({'class': 'form-control'})
-        self.fields['username'].label = 'Usuário'
-        self.fields['name'].label = 'Nome'
-        self.fields['email'].label = 'E-mail'
-        self.fields['password1'].label = 'Senha'
-        self.fields['password2'].label = 'Confirmação de senha'
-        self.fields['is_active'].label = 'Ativo'
-        self.fields['is_staff'].label = 'Administrador'
-        self.fields['is_superuser'].label = 'Super usuário'
-        self.fields['crta'].label = 'Crta'
-
+        self.fields["username"].widget.attrs.update({"class": "form-control"})
+        self.fields["name"].widget.attrs.update({"class": "form-control"})
+        self.fields["email"].widget.attrs.update({"class": "form-control"})
+        self.fields["password1"].widget.attrs.update({"class": "form-control"})
+        self.fields["password2"].widget.attrs.update({"class": "form-control"})
+        self.fields["username"].label = "Usuário"
+        self.fields["name"].label = "Nome"
+        self.fields["email"].label = "E-mail"
+        self.fields["password1"].label = "Senha"
+        self.fields["password2"].label = "Confirmação de senha"
+        self.fields["is_active"].label = "Ativo"
+        self.fields["is_staff"].label = "Administrador"
+        self.fields["is_superuser"].label = "Super usuário"
+        self.fields["crta"].label = "Crta"
 
     def save(self, commit=True):
         user = super(UserCreationForm, self).save(commit=False)

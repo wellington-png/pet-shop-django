@@ -4,7 +4,7 @@ from django.db.models import CharField, EmailField, BooleanField, DecimalField
 from apps.core.models import BaseModel
 
 class UserManager(BaseUserManager):
-    def create_user(self, username, name, email, password=None):
+    def create_user(self, username, name, email, cpf, logradouro, cidade, uf, cep, contato, salario, password=None):
         if not username:
             raise ValueError('O usuário precisa de um email')
 
@@ -49,7 +49,7 @@ class Funcionario(AbstractBaseUser, PermissionsMixin, BaseModel):
     username = CharField("Username", unique=True, max_length=255)
     is_staff = BooleanField("status de admin", default=False)
     is_active = BooleanField("ativo", default=True)
-    cpf = CharField("CPF", max_length=255, unique=True)
+    cpf = CharField("CPF", max_length=255)
     logradouro = CharField("logradouro", max_length=255)
     cidade = CharField("cidade", max_length=255)
     uf = CharField("UF", max_length=255)
