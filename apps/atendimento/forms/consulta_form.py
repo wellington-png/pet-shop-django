@@ -27,7 +27,6 @@ class ConsultaForm(ModelForm):
         self.fields['data_consulta'].widget.attrs['type'] = 'date'
          
     def save(self, commit=True):
-        print(self.cleaned_data)
         consulta = super(ConsultaForm, self).save(commit=False)
         consulta.save()
         return consulta
@@ -48,7 +47,6 @@ class ItemConsultaForm(ModelForm):
         self.fields['quantidade'].widget.attrs['class'] = 'form-control'
 
     def save(self, commit=True):
-        print(self.cleaned_data)
         item_consulta = super(ItemConsultaForm, self).save(commit=False)
         item_consulta.save()
         return item_consulta

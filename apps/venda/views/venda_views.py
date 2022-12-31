@@ -11,7 +11,7 @@ class CompraCreateView(LoginRequiredMixin, CreateView):
     model = Compra
     form_class = CompraForm
     template_name = 'compra_create.html'
-    success_url = '/compra/listar'
+    success_url = '/compra/list'
 
 
     formitem = inlineformset_factory(Compra, ItemCompra, form=ItemCompraForm, extra=1, can_delete=True)
@@ -48,7 +48,7 @@ class CompraUpdateView(LoginRequiredMixin, UpdateView):
     template_name = 'compra_create_up.html'
     success_url = '/compra/list'
 
-    item_order_formset = inlineformset_factory(Compra, ItemCompra, form=ItemCompraForm, extra=1, can_delete=True)
+    item_order_formset = inlineformset_factory(Compra, ItemCompra, form=ItemCompraForm, extra=1, can_delete=True, min_num=1)
 
     def form_valid(self, form):
         self.object = form.save()
@@ -63,7 +63,7 @@ class CompraUpdateView(LoginRequiredMixin, UpdateView):
         context = super(CompraUpdateView, self).get_context_data(**kwargs)
         context['title'] = 'Editar Compras'
         context['action'] = 'edit'
-        context['formset'] = self.item_order_formset(instance=self.object)
+        context['formitem'] = self.item_order_formset(instance=self.object)
         return context
 
 

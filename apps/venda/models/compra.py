@@ -7,7 +7,7 @@ class Compra(BaseModel):
     cliente = ForeignKey('core.Cliente', verbose_name='Cliente', on_delete=CASCADE)
     atendente = ForeignKey('account.Atendente', verbose_name='Atendente', on_delete=CASCADE)
     data_compra = DateField(verbose_name='Data da Compra', blank=True, null=True, auto_now_add=True)
-    valor_total = DecimalField(verbose_name='Valor Total', max_digits=10, decimal_places=2)
+    valor_total = DecimalField(verbose_name='Valor Total', max_digits=10, decimal_places=2, blank=True, null=True)
 
     def __str__(self):
         return self.cliente.nome

@@ -61,7 +61,6 @@ class ConsultaUpdateView(LoginRequiredMixin, UpdateView):
         context['formset'] = self.item_order_formset(instance=self.object)
         context['title'] = 'Editar Serviço'
         context['action'] = 'edit'
-        print(context)
         return context
 
 class ConsultaDeleteView(LoginRequiredMixin, DeleteView):

@@ -19,7 +19,6 @@ def create_data():
             cep=fake.postcode(),
             contato=fake.phone_number(),
         )
-    print('Cliente criado com sucesso!')
     for i in range(10):
         Pet.objects.create(
             nome=fake.name(),

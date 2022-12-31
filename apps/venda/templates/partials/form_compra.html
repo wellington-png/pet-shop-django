@@ -14,7 +14,7 @@
         <div class="card shadow mb-4">
             <!-- Card Body -->
             <div class="card-body">
-                <form method="POST" autocomplete="off">
+                <form method="POST" autocomplete="off" action="{% url 'apps:venda:compra_create' %}">
                     {% csrf_token %}
                     <div class="form-group row">
                         {{form}}
@@ -22,7 +22,7 @@
                     <hr>
                     <div class="d-sm-flex justify-content-between align-items-start">
                         <div>
-                            <h3 class="card-title card-title-dash">Market Overview</h3>
+                            <h3 class="card-title card-title-dash">Itens de venda</h3>
                         </div>
                         <div>
                             <div class="dropdown">
@@ -48,7 +48,7 @@
                                 </tr>
                             </thead>
                             {% endif %}
-                            <tr class="{% cycle row1 row2 %} itemformset_row">
+                            <tr class="{% cycle 'row1' 'row2' %} itemformset_row">
 
                                 {% for field in form.visible_fields %}
                                 <td>

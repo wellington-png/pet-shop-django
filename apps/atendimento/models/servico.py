@@ -24,7 +24,6 @@ class Servico(BaseModel):
 def pre_save_servico(sender, instance, **kwargs):
     instance.data_servico = datetime.now()
     instance.valor_total = instance.item_servico_set.aggregate(Sum('preco') *  Sum('quantidade'))
-    print(instance.valor_total)
     instance.save()
 
 post_delete.connect(pre_save_servico, sender=Servico)

@@ -23,7 +23,6 @@ class ServicoForm(ModelForm):
         self.fields['data_servico'].widget.attrs['type'] = 'date'
          
     def save(self, commit=True):
-        print(self.cleaned_data)
         servico = super(ServicoForm, self).save(commit=False)
         servico.save()
         return servico
@@ -44,7 +43,6 @@ class ItemServicoForm(ModelForm):
         self.fields['quantidade'].widget.attrs['class'] = 'form-control'
 
     def save(self, commit=True):
-        print(self.cleaned_data)
         item_servico = super(ItemServicoForm, self).save(commit=False)
         item_servico.save()
         return item_servico
