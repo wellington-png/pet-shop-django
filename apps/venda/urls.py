@@ -7,6 +7,7 @@ from apps.venda.views import (
     ProdutoUpdateView,
     CompraUpdateView,
     CompraDeleteView,
+    get_produto_value,
 )
 
 app_name = "venda"
@@ -21,4 +22,5 @@ urlpatterns = [
     ),
     path("compra/update/<int:pk>/", CompraUpdateView.as_view(), name="compra_update"),
     path("compra/delete/<int:pk>/", CompraDeleteView.as_view(), name="compra_delete"),
+    path("produto/get_value/<int:pk>/", get_produto_value, name="get_produto_value"),
 ]

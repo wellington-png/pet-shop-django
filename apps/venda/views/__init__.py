@@ -8,6 +8,7 @@ from apps.venda.views.produto_views import (
     ProdutoCreateView,
     ProdutoListView,
     ProdutoUpdateView,
+    get_produto_value
 )
 
 __all__ = [
@@ -18,4 +19,5 @@ __all__ = [
     "ProdutoUpdateView",
     "CompraUpdateView",
     "CompraDeleteView",
+    "get_produto_value"
 ]

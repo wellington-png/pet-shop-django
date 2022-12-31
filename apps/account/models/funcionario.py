@@ -4,7 +4,7 @@ from django.db.models import CharField, EmailField, BooleanField, DecimalField
 from apps.core.models import BaseModel
 
 class UserManager(BaseUserManager):
-    def create_user(self, username, name, email, cpf, logradouro, cidade, uf, cep, contato, salario, password=None):
+    def create_user(self, username, name, email, password=None):
         if not username:
             raise ValueError('O usuário precisa de um email')
 
@@ -21,11 +21,7 @@ class UserManager(BaseUserManager):
  
     def teste(self):
         print('teste')
-    
-    def create(self, **kwargs):
-        print('create')
-        return self.create_user(**kwargs)
-       
+
 
     def create_superuser(self, username, name, email, password):
         user = self.create_user(

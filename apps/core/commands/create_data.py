@@ -9,74 +9,74 @@ from faker import Faker
 fake = Faker('pt_BR')
 
 def create_data():
-    # for i in range(10):
-#         Cliente.objects.create(
-#             cpf=fake.cpf(),
-#             nome=fake.name(),
-#             logradoro=fake.street_name(),
-#             cidade=fake.city(),
-#             uf=fake.state(),
-#             cep=fake.postcode(),
-#             contato=fake.phone_number(),
-#         )
-#     print('Cliente criado com sucesso!')
-#     for i in range(10):
-#         Pet.objects.create(
-#             nome=fake.name(),
-#             raca=fake.word(),
-#             peso=fake.pydecimal(left_digits=2, right_digits=1, positive=True),
-#             data_nascimento=datetime.now(),
-#             sexo=fake.word(),
-#             especie=fake.word(),
-#             porte=fake.word(),
-#             pelagem=fake.word(),
-#             cliente=Cliente.objects.first(),
-#         )
+    for i in range(10):
+        Cliente.objects.create(
+            cpf=fake.cpf(),
+            nome=fake.name(),
+            logradoro=fake.street_name(),
+            cidade=fake.city(),
+            uf=fake.state(),
+            cep=fake.postcode(),
+            contato=fake.phone_number(),
+        )
+    print('Cliente criado com sucesso!')
+    for i in range(10):
+        Pet.objects.create(
+            nome=fake.name(),
+            raca=fake.word(),
+            peso=fake.pydecimal(left_digits=2, right_digits=1, positive=True),
+            data_nascimento=datetime.now(),
+            sexo=fake.word(),
+            especie=fake.word(),
+            porte=fake.word(),
+            pelagem=fake.word(),
+            cliente=Cliente.objects.first(),
+        )
 
-#     for i in range(10):
-#         Atendente.objects.create(
-#             name=fake.name(),
-#             email=fake.email(),
-#             username=fake.user_name(),
-#             cpf=fake.cpf(),
-#             logradouro=fake.street_name(),
-#             cidade=fake.city(),
-#             uf=fake.state(),
-#             cep=fake.postcode(),
-#             contato=fake.phone_number(),
-#             salario=fake.pydecimal(left_digits=5, right_digits=2, positive=True),
-#             # cra=fake.pydecimal(left_digits=5, right_digits=2, positive=True),
-#         )
-# # from apps.core.commands.create_data import create_data
-#     for i in range(10):
-#         Tecnico.objects.create(
-#             name=fake.name(),
-#             email=fake.email(),
-#             username=fake.user_name(),
-#             cpf=fake.cpf(),
-#             logradouro=fake.street_name(),
-#             cidade=fake.city(),
-#             uf=fake.state(),
-#             cep=fake.postcode(),
-#             contato=fake.phone_number(),
-#             salario=fake.pydecimal(left_digits=5, right_digits=2, positive=True),
-#             # crta=fake.pydecimal(left_digits=5, right_digits=2, positive=True),
-#         )
+    for i in range(10):
+        Atendente.objects.create(
+            name=fake.name(),
+            email=fake.email(),
+            username=fake.user_name(),
+            cpf=fake.cpf(),
+            logradouro=fake.street_name(),
+            cidade=fake.city(),
+            uf=fake.state(),
+            cep=fake.postcode(),
+            contato=fake.phone_number(),
+            salario=fake.pydecimal(left_digits=5, right_digits=2, positive=True),
+            cra=fake.pydecimal(left_digits=5, right_digits=2, positive=True),
+        )
+# from apps.core.commands.create_data import create_data
+    for i in range(10):
+        Tecnico.objects.create(
+            name=fake.name(),
+            email=fake.email(),
+            username=fake.user_name(),
+            cpf=fake.cpf(),
+            logradouro=fake.street_name(),
+            cidade=fake.city(),
+            uf=fake.state(),
+            cep=fake.postcode(),
+            contato=fake.phone_number(),
+            salario=fake.pydecimal(left_digits=5, right_digits=2, positive=True),
+            crta=fake.pydecimal(left_digits=5, right_digits=2, positive=True),
+        )
 
-#     for i in range(10):
-#         Veterinario.objects.create(
-#             name=fake.name(),
-#             email=fake.email(),
-#             username=fake.user_name(),
-#             cpf=f'{fake.cpf()}',
-#             logradouro=fake.street_name(),
-#             cidade=fake.city(),
-#             uf=fake.state(),
-#             cep=fake.postcode(),
-#             contato=fake.phone_number(),
-#             salario=fake.pydecimal(left_digits=5, right_digits=2, positive=True),
-#             # crmv=fake.pydecimal(left_digits=5, right_digits=2, positive=True),
-#         )
+    for i in range(10):
+        Veterinario.objects.create(
+            name=fake.name(),
+            email=fake.email(),
+            username=fake.user_name(),
+            cpf=f'{fake.cpf()}',
+            logradouro=fake.street_name(),
+            cidade=fake.city(),
+            uf=fake.state(),
+            cep=fake.postcode(),
+            contato=fake.phone_number(),
+            salario=fake.pydecimal(left_digits=5, right_digits=2, positive=True),
+            crmv=fake.pydecimal(left_digits=5, right_digits=2, positive=True),
+        )
  
     for i in range(10):
         Produto.objects.create(
@@ -98,7 +98,7 @@ def create_data():
         )    
     for i in range(10):
         Compra.objects.create(
-            cliente=Cliente.objects.first(),
+            cliente_id=fake.pyint(1, 10),
             atendente=Atendente.objects.first(),
             valor_total=50.10,
             data_compra=datetime.now().date(),
@@ -106,15 +106,15 @@ def create_data():
 
     for i in range(10):
         ItemCompra.objects.create(
-            compra=Compra.objects.first(),
-            produto=Produto.objects.first(),
+            compra_id=fake.pyint(1, 10),
+            produto_id=fake.pyint(1, 10),
             quantidade=fake.pyint()
         )
 
 
     for i in range(10):
         Servico.objects.create(
-            pet=Pet.objects.first(),
+            pet_id=fake.pyint(1, 10),
             tecnico=Tecnico.objects.first(),
             data_servico=datetime.now().date(),
             valor_total=50.10,
@@ -123,7 +123,7 @@ def create_data():
 
     for i in range(10):
         Consulta.objects.create(
-            pet=Pet.objects.first(),
+            pet_id=fake.pyint(1, 10),
             veterinario=Veterinario.objects.first(),
             sintomas=fake.text(),
             diagnostico=fake.text(),
@@ -134,15 +134,15 @@ def create_data():
     
     for i in range(10):
         ItemConsulta.objects.create(
-            consulta=Consulta.objects.first(),
-            tipo_servico=TipoServico.objects.first(),
+            consulta_id=fake.pyint(1, 10),
+            tipo_servico_id=fake.pyint(1, 10),
             quantidade=fake.pyint(),
         )
     
     for i in range(10):
         ItemServico.objects.create(
-            servico=Servico.objects.first(),
-            tipo_servico=TipoServico.objects.first(),
+            servico_id=fake.pyint(1, 10),
+            tipo_servico_id=fake.pyint(1, 10),
             quantidade=fake.pyint(),
         )
 

@@ -3,6 +3,7 @@ from django.contrib.auth.mixins import LoginRequiredMixin
 from django.urls import reverse_lazy
 from apps.venda.models import Produto
 from apps.venda.forms import ProdutoForm
+from django.http import JsonResponse
 
 
 class ProdutoCreateView(LoginRequiredMixin, CreateView):
@@ -42,3 +43,12 @@ class ProdutoUpdateView(LoginRequiredMixin, UpdateView):
         context = super(ProdutoUpdateView, self).get_context_data(**kwargs)
         context['title_complete'] = "Produto"
         return context
+
+def get_produto_value(request, pk):
+    produto = Produto.objects.get(pk=pk)
+    print(produto.preco)
+    return JsonResponse(
+        {'preco': produto.preco, 'nome': produto.nome},safe=False
+    )
+
+    

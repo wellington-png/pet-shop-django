@@ -14,9 +14,14 @@ class ProdutoAdmin(ModelAdmin):
 @register(Compra)
 class CompraAdmin(ModelAdmin):
     inlines = [ItemCompraInline]
+    list_display = ['cliente', 'atendente', 'data_compra', 'valor']
 
 
 @register(Estoque)
 class EstoqueAdmin(ModelAdmin):
     pass
+
+@register(ItemCompra)
+class ItemCompraAdmin(ModelAdmin):
+    list_display = ['produto', 'quantidade']
 
