@@ -16,7 +16,6 @@ class ItemCompra(BaseModel):
     def __str__(self):
         return self.produto.nome
     
-
-def update_valor_item(sender, instance, **kwargs):
-    instance.valor_item = float(instance.produto.preco) * float(instance.quantidade)
-pre_save.connect(update_valor_item, sender=ItemCompra)
+    def save(self, *args, **kwargs):
+        self.valor_item = float(self.produto.preco) * float(self.quantidade)
+        super(ItemCompra, self).save(*args, **kwargs)

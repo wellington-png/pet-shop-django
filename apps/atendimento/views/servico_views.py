@@ -28,7 +28,7 @@ class ServicoCreateView(LoginRequiredMixin, CreateView):
         context = super(ServicoCreateView, self).get_context_data(**kwargs)
         context['title'] = 'Cadastrar Serviço'
         context['action'] = 'add'
-        context['formset'] = self.item_order_formset(instance=self.object)
+        context['formitem'] = self.item_order_formset(instance=self.object)
         return context
 
 
@@ -60,7 +60,7 @@ class ServicoUpdateView(LoginRequiredMixin, UpdateView):
         context = super(ServicoUpdateView, self).get_context_data(**kwargs)
         context['title'] = 'Alterar Serviço'
         context['action'] = 'edit'
-        context['formset'] = self.item_order_formset(instance=self.object)
+        context['formitem'] = self.item_order_formset(instance=self.object)
         return context
     
 

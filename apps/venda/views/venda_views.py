@@ -30,8 +30,6 @@ class CompraCreateView(LoginRequiredMixin, CreateView):
         context['title'] = 'Cadastrar Compras'
         context['action'] = 'add'
         context['formitem'] = self.formitem(instance=self.object)
-        t = context['formitem']
-        print(t)
         return context
 
 

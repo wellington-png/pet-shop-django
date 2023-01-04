@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'apps.venda',
     
     'fontawesomefree',
+    'stdimage',
 ]
 
 MIDDLEWARE = [

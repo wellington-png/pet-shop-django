@@ -1,5 +1,161 @@
 {%extends "base.html"%}
 {% load static %}
 {%block content%}
-{%endblock%}
-{%block sidebar%} {% include 'partials/sidebar.html' %} {%endblock%}
+<div class="row">
+    <div class="col-sm-12">
+        <div class="statistics-details d-flex align-items-center justify-content-between">
+            <div>
+                <p class="statistics-title">valor em vendas</p>
+                <h3 class="rate-percentage">R${{valor_compras}}</h3>
+                <p class="text-success d-flex">quantidade: <span> {{quant_compra}}</span></p>
+            </div>
+            <div>
+                <p class="statistics-title">valor em serviços</p>
+                <h3 class="rate-percentage">R$</h3>
+                <p class="text-success d-flex">QUANT<span>: 157</span></p>
+            </div>
+            <div>
+                <p class="statistics-title">valor em consultas</p>
+                <h3 class="rate-percentage">R$</h3>
+                <p class="text-success d-flex">QUANT<span>: 157</span></p>
+            </div>
+            <div>
+                <p class="statistics-title">valor total</p>
+                <h3 class="rate-percentage">R$</h3>
+                <p class="text-success d-flex">QUANT <span>: 157</span></p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row flex-grow">
+    <div class="col-md-4 col-lg-4 grid-margin stretch-card">
+        <div class="card card-rounded">
+            <div class="card-body card-rounded">
+                <h4 class="card-title  card-title-dash">Vendas Recentes</h4>
+                {% for venda in list_vendas %}
+                <div class="list align-items-center border-bottom py-2">
+                    <div class="wrapper w-100">
+                        <p class="mb-2 font-weight-medium">
+                            {{venda.cliente.nome}}
+                        </p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="d-flex align-items-center">
+                                <i class="mdi mdi-calendar text-muted me-1"></i>
+                                <p class="mb-0 text-small text-muted">{{venda.data_compra}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+                <div class="list align-items-center pt-3">
+                    <div class="wrapper w-100">
+                        <p class="mb-0">
+                            <a href="#" class="fw-bold text-primary">Show all <i
+                                    class="mdi mdi-arrow-right ms-2"></i></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4 col-lg-4 grid-margin stretch-card">
+        <div class="card card-rounded">
+            <div class="card-body card-rounded">
+                <h4 class="card-title  card-title-dash">Consultas recentes</h4>
+                {% for consulta in list_consultas %}
+                <div class="list align-items-center border-bottom py-2">
+                    <div class="wrapper w-100">
+                        <p class="mb-2 font-weight-medium">
+                            {{consulta.pet.nome}}
+                        </p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="d-flex align-items-center">
+                                <i class="mdi mdi-calendar text-muted me-1"></i>
+                                <p class="mb-0 text-small text-muted">Mar 14, 2019</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+                <div class="list align-items-center pt-3">
+                    <div class="wrapper w-100">
+                        <p class="mb-0">
+                            <a href="#" class="fw-bold text-primary">Show all <i
+                                    class="mdi mdi-arrow-right ms-2"></i></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="col-md-4 col-lg-4 grid-margin stretch-card">
+        <div class="card card-rounded">
+            <div class="card-body card-rounded">
+                <h4 class="card-title  card-title-dash">Serviço recentes</h4>
+                {% for servico in list_servicos %}
+                <div class="list align-items-center border-bottom py-2">
+                    <div class="wrapper w-100">
+                        <p class="mb-2 font-weight-medium">
+                            {{servico.pet.nome}}
+                        </p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="d-flex align-items-center">
+                                <i class="mdi mdi-calendar text-muted me-1"></i>
+                                <p class="mb-0 text-small text-muted">Mar 14, 2019</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+                <div class="list align-items-center pt-3">
+                    <div class="wrapper w-100">
+                        <p class="mb-0">
+                            <a href="#" class="fw-bold text-primary">Show all <i
+                                    class="mdi mdi-arrow-right ms-2"></i></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="col-lg-12 d-flex flex-column">
+        <div class="row flex-grow">
+            <div class="col-12 col-lg-4 col-lg-12 grid-margin stretch-card">
+                <div class="card card-rounded">
+                    <div class="card-body">
+                        <div class="d-sm-flex justify-content-between align-items-start">
+                            <div>
+                                <h4 class="card-title card-title-dash">Performance Line Chart</h4>
+                                <h5 class="card-subtitle card-subtitle-dash">Lorem Ipsum is simply dummy text of the
+                                    printing</h5>
+                            </div>
+                            <div id="performance-line-legend">
+                                <div class="chartjs-legend">
+                                    <ul>
+                                        <li><span style="background-color:#1F3BB3"></span>This week</li>
+                                        <li><span style="background-color:#52CDFF"></span>Last week</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chartjs-wrapper mt-5">
+                            <div class="chartjs-size-monitor">
+                                <div class="chartjs-size-monitor-expand">
+                                    <div class=""></div>
+                                </div>
+                                <div class="chartjs-size-monitor-shrink">
+                                    <div class=""></div>
+                                </div>
+                            </div>
+                            <canvas id="performaneLine" style="display: block; width: 436px; height: 150px;" width="436"
+                                height="150" class="chartjs-render-monitor"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {%endblock%}
+    {%block sidebar%} {% include 'partials/sidebar.html' %} {%endblock%}

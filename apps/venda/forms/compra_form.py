@@ -9,7 +9,7 @@ class CompraForm(ModelForm):
     class Meta:
         model = Compra
 
-        fields = 'cliente', 'atendente', 
+        fields = 'cliente', 'atendente', 'data_compra', 
     
     def __init__(self, *args, **kwargs):
         super(CompraForm, self).__init__(*args, **kwargs)
@@ -19,7 +19,6 @@ class CompraForm(ModelForm):
         self.fields['atendente'].widget.attrs['class'] = 'form-control js-example-basic-single w-100 select2-hidden-accessible'
         
     def save(self, commit=True):
-        print(self.cleaned_data)
         compra = super(CompraForm, self).save(commit=False)
         compra.save()
         return compra
@@ -37,7 +36,6 @@ class ItemCompraForm(ModelForm):
         self.fields['extra_field_valor'].widget.attrs['readonly'] = True
         self.fields['extra_field_valor'].widget.attrs['id'] = 'valor'
 
-        # onclick="calcularValor()"
         self.fields['extra_field_valor'].widget.attrs['onclick'] = "calcularValor()"
          
         self.fields['extra_field_valor_total'] = DecimalField(max_digits=10, decimal_places=2)
@@ -49,16 +47,15 @@ class ItemCompraForm(ModelForm):
         
 
         self.fields['produto'].queryset = Produto.objects.all()
-        self.fields['produto'].widget.attrs['onclick'] = "calcularValor()"
         
         
         self.fields['produto'].widget.attrs['class'] = 'form-control produto'
         self.fields['quantidade'].widget.attrs['class'] = 'form-control quantidade'
+        self.fields['produto'].widget.attrs['onclick'] = "calcularValor()"
         self.fields['quantidade'].widget.attrs['onclick'] = "calcularValor()"
         
 
     def save(self, commit=True):
-        print(self.cleaned_data)
         item_compra = super(ItemCompraForm, self).save(commit=False)
         item_compra.save()
         return item_compra

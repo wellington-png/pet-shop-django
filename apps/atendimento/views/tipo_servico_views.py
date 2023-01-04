@@ -4,6 +4,7 @@ from django.views.generic import ListView, CreateView, UpdateView, DeleteView
 from django.urls import reverse_lazy
 from apps.atendimento.models import TipoServico
 from apps.atendimento.forms import TipoForm
+from django.http import JsonResponse
 
 
 
@@ -68,3 +69,8 @@ class TipoServicoDeleteView(LoginRequiredMixin, DeleteView):
 
 
      
+def get_servico_value(request, pk):
+    servico = TipoServico.objects.get(pk=pk)
+    return JsonResponse(
+        {'preco': servico.preco, 'nome': servico.descricao},safe=False
+    )

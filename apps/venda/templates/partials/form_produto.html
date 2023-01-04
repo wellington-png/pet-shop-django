@@ -2,7 +2,7 @@
       <div class="card">
         <div class="card-body">
           <h4 class="card-title">Cadastro de compra</h4>
-          <form class="forms-sample" method="post" action="{% url 'apps:venda:produto_create' %}">
+          <form class="forms-sample" method="post" action="{% url 'apps:venda:produto_create' %}" enctype="multipart/form-data">
               <div class="form-group">
               {% csrf_token %}
               {{form}} <!-- form de compra -->

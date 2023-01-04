@@ -14,6 +14,7 @@ from apps.atendimento.views import (
     TipoServicoListView,
     TipoServicoDeleteView,
     TipoServicoUpdateView,
+    get_servico_value
 )
 
 app_name = "atendimento"
@@ -28,4 +29,6 @@ urlpatterns = [
     path("tipo_servico/create/", TipoServicoCreateView.as_view(), name="tipo_servico_create"),
     path("tipo_servico/list/", TipoServicoListView.as_view(), name="tipo_servico_list"),
     path("tipo_servico/update/<int:pk>/", TipoServicoUpdateView.as_view(), name="tipo_servico_update"),
+    path("servico/get_value/<int:pk>/", get_servico_value, name="get_servico_value"),
+    
 ]

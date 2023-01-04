@@ -46,7 +46,6 @@ class ProdutoUpdateView(LoginRequiredMixin, UpdateView):
 
 def get_produto_value(request, pk):
     produto = Produto.objects.get(pk=pk)
-    print(produto.preco)
     return JsonResponse(
         {'preco': produto.preco, 'nome': produto.nome},safe=False
     )

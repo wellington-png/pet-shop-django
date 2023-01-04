@@ -2,11 +2,25 @@
 
 {% load static %}
 
-{%block content%}
-<script src="{% static 'fontawesomefree/js/fontawesome.js' %}"></script>
-<script src="{% static 'fontawesomefree/js/solid.js' %}"></script>
-{% include 'partials/form_servico.html' %}
+{%block head%}
+<link class="jsbin" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1/themes/base/jquery-ui.css" rel="stylesheet"
+    type="text/css" />
+<script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.0/jquery-ui.min.js"></script>
+<link href="{% static 'fontawesome_free/css/all.min.css' %}" rel="stylesheet" type="text/css">
+{%endblock%}
 
+{%block content%}
+{% include 'partials/form_servico.html' %}
 {%endblock%}
 
 {%block sidebar%} {% include 'partials/sidebar.html' %} {%endblock%}
+{% block scripts %}
+<script type="text/javascript" src="{% static 'formset/calc_value _servico.js' %}"></script>
+<script type="text/javascript" src="{% static 'formset/jquery.formset.js' %}"></script>
+<script type="text/javascript" src="{% static 'formset/add_formsets.js' %}"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.10/jquery.mask.js"></script>
+<script type="text/javascript" src="{% static 'formset/jquery.mask.js' %}"></script>
+{% endblock %}

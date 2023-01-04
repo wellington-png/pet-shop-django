@@ -1,6 +1,5 @@
-from django.forms import ModelForm
+from django.forms import ModelForm, DecimalField
 from apps.atendimento.models import Servico, ItemServico, TipoServico
-from apps.account.models import  Tecnico
 from apps.core.models import Pet
 
 
@@ -35,12 +34,28 @@ class ItemServicoForm(ModelForm):
 
     def __init__(self, *args, **kwargs):
         super(ItemServicoForm, self).__init__(*args, **kwargs)
+        
+        self.fields['extra_field_valor'] = DecimalField(max_digits=10, decimal_places=2)
+        self.fields['extra_field_valor'].widget.attrs['class'] = 'form-control valor'
+        self.fields['extra_field_valor'].widget.attrs['readonly'] = True
+        self.fields['extra_field_valor'].widget.attrs['id'] = 'valor'
+
+        # onclick="calcularValor()"
+        self.fields['extra_field_valor'].widget.attrs['onclick'] = "calcularValor()"
+         
+        self.fields['extra_field_valor_total'] = DecimalField(max_digits=10, decimal_places=2)
+        self.fields['extra_field_valor_total'].widget.attrs['class'] = 'form-control valor_total'
+        self.fields['extra_field_valor_total'].widget.attrs['readonly'] = True
+        
+        
         self.fields['servico'].queryset = Servico.objects.all()
         self.fields['tipo_servico'].queryset = TipoServico.objects.all()
 
         self.fields['servico'].widget.attrs['class'] = 'form-control'
-        self.fields['tipo_servico'].widget.attrs['class'] = 'form-control'
-        self.fields['quantidade'].widget.attrs['class'] = 'form-control'
+        self.fields['tipo_servico'].widget.attrs['class'] = 'form-control servico'
+        self.fields['quantidade'].widget.attrs['class'] = 'form-control quantidade'
+        self.fields['tipo_servico'].widget.attrs['onclick'] = "calcularValor()"
+        self.fields['quantidade'].widget.attrs['onclick'] = "calcularValor()"
 
     def save(self, commit=True):
         item_servico = super(ItemServicoForm, self).save(commit=False)

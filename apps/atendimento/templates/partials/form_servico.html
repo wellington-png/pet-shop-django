@@ -1,71 +1,78 @@
 {% load static %}
 
-<link class="jsbin" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1/themes/base/jquery-ui.css" rel="stylesheet" type="text/css" />
-<script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-<script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.0/jquery-ui.min.js"></script>
-<link href="{% static 'fontawesome_free/css/all.min.css' %}" rel="stylesheet" type="text/css">
 
 <!-- Page Heading -->
 <div class="row">
-  
+
     <!-- Area Chart -->
     <div class="col-xl-12 col-lg-12">
         <div class="card shadow mb-4">
             <!-- Card Body -->
             <div class="card-body">
-                <form method="POST" autocomplete="off">
+                <form method="POST" autocomplete="off" action="{% url 'apps:atendimento:consulta_create' %}">
                     {% csrf_token %}
                     <div class="form-group row">
                         {{form}}
                     </div>
                     <hr>
-                    <h3>Itens</h3>
+                    <div class="d-sm-flex justify-content-between align-items-start">
+                        <div>
+                            <h3 class="card-title card-title-dash">Itens de serviço</h3>
+                        </div>
+                        <div>
+                            <div class="dropdown">
+                                <h3 class="card-title card-title-dash">Valor do serviço <span id="valor_venda">0,0</span>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
                     <!-- Tabela do formulário de peças -->
                     <div class="table-responsive">
                         <table class="table">
-                            {{ formset.management_form }}
+                            {{ formitem.management_form }}
 
-                            {% for form in formset.forms %}
-                                {% if forloop.first %}
-                                    <thead>
-                                    <tr>
-                                        {% for field in form.visible_fields %}
-                                            <th>{{ field.label|capfirst }}</th>
-                                        {% endfor %}
-                                    </tr>
-                                    </thead>
-                                {% endif %}
-                                <tr class="{% cycle row1 row2 %} itemformset_row">
-                                    {% for field in form.visible_fields %}
-                                        <td>
-                                            {# Include the hidden fields in the form #}
-                                            {% if forloop.first %}
-                                                {% for hidden in form.hidden_fields %}
-                                                    {{ hidden }}
-                                                {% endfor %}
-                                            {% endif %}
-                                            {% for error in field.errors %}
-                                                <div class="alert alert-danger">
-                                                    <strong>{{ error }}</strong>
-                                                </div>
-                                            {% endfor %}
-                                            {{ field }}
-                                        </td>
-                                    {% endfor %}
+                            {% for form in formitem.forms %}
+                            {% if forloop.first %}
+                            <thead>
+                                <tr>
+                                    <th>{{ form.produto.label }}</th>
+                                    <th>{{ form.quantidade.label }}</th>
+                                    <th>valor</th>
+                                    <th>valor total</th>
+                                    <th>{{form.DELETE.label}}</th>
                                 </tr>
+                            </thead>
+                            {% endif %}
+                            <tr class="{% cycle 'row1' 'row2' %} itemsformset_row">
+
+                                {% for field in form.visible_fields %}
+                                <td>
+                                    {# Include the hidden fields in the form #}
+                                    {% if forloop.first %}
+                                    {% for hidden in form.hidden_fields %}
+                                    {{ hidden }}
+                                    {% endfor %}
+                                    {% endif %}
+                                    {% for error in field.errors %}
+                                    <div class="alert alert-danger">
+                                        <strong>{{ error }}</strong>
+                                    </div>
+                                    {% endfor %}
+                                    {{ field }}
+                                </td>
+                                {% endfor %}
+                            </tr>
                             {% endfor %}
                         </table>
                     </div>
                     <button type="submit" class="btn btn-primary btn-user btn-block">
                         Salvar alterações
-                    </a>
+                        </a>
                 </form>
             </div>
         </div>
     </div>
 </div>
-<script type="text/javascript" src="{% static 'formset/jquery.formset.js' %}"></script>
-<script type="text/javascript" src="{% static 'formset/add_formsets.js' %}"></script>
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.10/jquery.mask.js"></script>
+
+
+
