@@ -12,6 +12,8 @@ class ItemCompra(BaseModel):
     class Meta:
         verbose_name = 'Item Compra'
         verbose_name_plural = 'Itens Compra'
+        ordering = ['-id']
+        
 
     def __str__(self):
         return self.produto.nome

@@ -20,6 +20,7 @@ class Produto(BaseModel):
     class Meta:
         verbose_name = 'Produto'
         verbose_name_plural = 'Produtos'
+        ordering = ['-id']
 
     def __str__(self):
         return self.nome

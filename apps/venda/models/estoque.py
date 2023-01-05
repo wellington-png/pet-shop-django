@@ -10,6 +10,8 @@ class Estoque(BaseModel):
     class Meta:
         verbose_name = 'Estoque'
         verbose_name_plural = 'Estoque'
+        ordering = ['-id']
+        
 
     def __str__(self):
         return self.produto.nome

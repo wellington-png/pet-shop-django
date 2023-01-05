@@ -14,7 +14,7 @@ class Consulta(BaseModel):
     class Meta:
         verbose_name = 'Consulta'
         verbose_name_plural = 'Consultas'
-        ordering = ['-data_consulta']
+        ordering = ['-id']
 
     def __str__(self):
         return self.pet.nome

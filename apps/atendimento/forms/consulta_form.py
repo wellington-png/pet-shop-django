@@ -43,13 +43,15 @@ class ItemConsultaForm(ModelForm):
         self.fields['extra_field_valor'].widget.attrs['class'] = 'form-control valor'
         self.fields['extra_field_valor'].widget.attrs['readonly'] = True
         self.fields['extra_field_valor'].widget.attrs['id'] = 'valor'
+        self.fields['extra_field_valor'].widget.attrs['required'] = False
 
-        # onclick="calcularValor()"
         self.fields['extra_field_valor'].widget.attrs['onclick'] = "calcularValor()"
          
         self.fields['extra_field_valor_total'] = DecimalField(max_digits=10, decimal_places=2)
         self.fields['extra_field_valor_total'].widget.attrs['class'] = 'form-control valor_total'
         self.fields['extra_field_valor_total'].widget.attrs['readonly'] = True
+        self.fields['extra_field_valor'].widget.attrs['required'] = False
+        
         
         
         self.fields['consulta'].queryset = Consulta.objects.all()

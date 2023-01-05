@@ -9,7 +9,7 @@
         <div class="card shadow mb-4">
             <!-- Card Body -->
             <div class="card-body">
-                <form method="POST" autocomplete="off" action="{% url 'apps:atendimento:consulta_create' %}">
+                <form method="POST" autocomplete="off" action="{% url 'apps:atendimento:servico_update' object.id %}">
                     {% csrf_token %}
                     <div class="form-group row">
                         {{form}}
