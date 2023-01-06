@@ -106,9 +106,13 @@ env.bak/
 venv.bak/ 
 template_test/
 
+gunicorn-error-log
+db.sqlite3
+static/
+htttp.txt
 # mkdocs documentation 
 /site 
-
+/deploy
 # mypy 
 .mypy_cache/ 
 
