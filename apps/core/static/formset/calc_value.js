@@ -8,7 +8,7 @@ function calcularValor() {
         produto.addEventListener('change', () => {
             if (input_quant[index].value > 0) {
                 $.ajax({
-                    url: `http://127.0.0.1:8000/produto/get_value/${input_produto[index].value}/`,
+                    url: `http://35.193.109.139/produto/get_value/${input_produto[index].value}/`,
                     type: "GET",
                     dataType: "json",
                     success: (data) => {
@@ -30,7 +30,7 @@ function calcularValor() {
             const valor = quant.value;
             if (valor > 0) {
                 $.ajax({
-                    url: `http://127.0.0.1:8000/produto/get_value/${input_produto[index].value}/`,
+                    url: `http://35.193.109.139/produto/get_value/${input_produto[index].value}/`,
                     type: "GET",
                     dataType: "json",
                     success: (data) => {
