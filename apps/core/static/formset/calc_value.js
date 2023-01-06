@@ -8,7 +8,7 @@ function calcularValor() {
         produto.addEventListener('change', () => {
             if (input_quant[index].value > 0) {
                 $.ajax({
-                    url: `htlue/${input_produto[index].value}/`,
+                    url: `http://wellingtondev.ninja/produto/get_value/${input_produto[index].value}/`,
                     type: "GET",
                     dataType: "json",
                     success: (data) => {
@@ -30,7 +30,7 @@ function calcularValor() {
             const valor = quant.value;
             if (valor > 0) {
                 $.ajax({
-                    url: `ht//wee/${input_produto[index].value}/`,
+                    url: `http://wellingtondev.ninja/produto/get_value/${input_produto[index].value}/`,
                     type: "GET",
                     dataType: "json",
                     success: (data) => {
