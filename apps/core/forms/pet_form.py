@@ -30,6 +30,7 @@ class PetForm(ModelForm):
          self.fields["cliente"].widget.attrs["class"] = "form-control"
 
     def save(self, commit=True):
-        pet = super(PetForm, self).save(commit=False)
-        pet.nome = self.cleaned_data["nome"]
-        pet.raca = self.cleaned_data["raca"]
+        if not commit:
+            raise NotImplementedError("Can't create Pet without database save")
+        pet = super(PetForm, self).save(commit=True)
+        return pet

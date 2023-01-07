@@ -1,5 +1,6 @@
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.views.generic import ListView, CreateView, UpdateView, DeleteView
+from django.urls import reverse_lazy
 
 from apps.core.forms import ClienteForm
 from apps.core.models import Cliente
@@ -23,7 +24,7 @@ class ClienteCreateView(LoginRequiredMixin, CreateView):
     model = Cliente
     form_class = ClienteForm
     template_name = "clientes/clientes_form.html"
-    success_url = "/clientes/"
+    success_url = reverse_lazy('apps:core:cliente_list')
 
     def get_context_data(self, **kwargs):
         context = super(ClienteCreateView, self).get_context_data(**kwargs)
@@ -35,7 +36,7 @@ class ClienteUpdateView(LoginRequiredMixin, UpdateView):
     model = Cliente
     form_class = ClienteForm
     template_name = "clientes/clientes_form.html"
-    success_url = "/clientes/"
+    success_url = reverse_lazy('apps:core:cliente_list')
 
     def get_context_data(self, **kwargs):
         context = super(ClienteUpdateView, self).get_context_data(**kwargs)
@@ -46,7 +47,7 @@ class ClienteUpdateView(LoginRequiredMixin, UpdateView):
 class ClienteDeleteView(LoginRequiredMixin, DeleteView):
     model = Cliente
     template_name = "clientes/clientes_delete.html"
-    success_url = "/clientes/"
+    success_url = reverse_lazy('apps:core:cliente_list')
 
     def get_context_data(self, **kwargs):
         context = super(ClienteDeleteView, self).get_context_data(**kwargs)

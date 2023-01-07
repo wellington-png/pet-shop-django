@@ -1,5 +1,6 @@
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.views.generic import ListView, CreateView, UpdateView, DeleteView
+from django.urls import reverse_lazy
 
 from apps.core.forms import PetForm
 from apps.core.models import Pet
@@ -9,12 +10,13 @@ class PetCreateView(LoginRequiredMixin, CreateView):
     model = Pet
     form_class = PetForm
     template_name = "pets/pets_form.html"
-    success_url = "/pets/"
+    success_url = reverse_lazy('apps:core:pet_list')
 
     def get_context_data(self, **kwargs):
         context = super(PetCreateView, self).get_context_data(**kwargs)
         context["title"] = "Novo Pet"
         return context
+
 
 class PetListView(LoginRequiredMixin, ListView):
     model = Pet
@@ -37,7 +39,8 @@ class PetUpdateView(LoginRequiredMixin, UpdateView):
     model = Pet
     form_class = PetForm
     template_name = "pets/pets_form.html"
-    success_url = "/pets/"
+    success_url = reverse_lazy('apps:core:pet_list')
+
 
     def get_context_data(self, **kwargs):
         context = super(PetUpdateView, self).get_context_data(**kwargs)
@@ -48,8 +51,8 @@ class PetUpdateView(LoginRequiredMixin, UpdateView):
 class PetDeleteView(LoginRequiredMixin, DeleteView):
     model = Pet
     template_name = "pets/pets_confirm_delete.html"
-    success_url = "/pets/"
-    
+    success_url = reverse_lazy('apps:core:pet_list')
+
     def get_context_data(self, **kwargs):
         context = super(PetDeleteView, self).get_context_data(**kwargs)
         context["title"] = "Excluir Pet"
