@@ -1,12 +1,12 @@
-from django.db.models import CharField
+from django.db.models import CharField, DecimalField, TextField
 from stdimage import StdImageField
 
 from apps.core.models import BaseModel
 
 class Produto(BaseModel):
     nome = CharField(verbose_name='Nome', max_length=100)
-    descricao = CharField(verbose_name='Descrição', max_length=100)
-    preco = CharField(verbose_name='Preço', max_length=100)
+    descricao = TextField(verbose_name='Descrição')
+    preco = DecimalField(verbose_name='Preço', max_digits=10, decimal_places=2)
     imagem = StdImageField(
         verbose_name='Imagem',
         upload_to='produtos',

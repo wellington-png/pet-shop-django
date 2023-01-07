@@ -1,0 +1,1706 @@
+[
+    {
+      "model": "venda.produto",
+      "pk": 1,
+      "fields": {
+        "created_at": "2022-12-23T20:55:44.259Z",
+        "updated_at": "2022-12-31T00:38:43.939Z",
+        "nome": "ABAMECTIN PR",
+        "descricao": "Para controle e tratamento de vermes redondos e ectoparasitoses como&nbsp;Ascaris suu...",
+        "preco": 35.99,
+        "imagem": "produtos/default.jpg"
+      }
+    },
+    {
+      "model": "venda.produto",
+      "pk": 2,
+      "fields": {
+        "created_at": "2022-12-23T20:55:44.259Z",
+        "updated_at": "2022-12-31T00:38:43.939Z",
+        "nome": "Adaptil Difusor e Refil",
+        "descricao": "Durante a amamentação, as cadelas produzem um odor que faz com que os cães se si...",
+        "preco": 35.99,
+        "imagem": "produtos/default.jpg"
+      }
+    },
+    {
+      "model": "venda.produto",
+      "pk": 3,
+      "fields": {
+        "created_at": "2022-12-23T20:55:44.259Z",
+        "updated_at": "2022-12-31T00:38:43.939Z",
+        "nome": "Adaptil Spray",
+        "descricao": "Durante a amamentação, as cadelas produzem um odor que faz com que os cães se si...",
+        "preco": 35.99,
+        "imagem": "produtos/default.jpg"
+      }
+    },
+    {
+      "model": "venda.produto",
+      "pk": 4,
+      "fields": {
+        "created_at": "2022-12-23T20:55:44.259Z",
+        "updated_at": "2022-12-31T00:38:43.939Z",
+        "nome": "ADE",
+        "descricao": "Descrição e indicações : Suplemento de vitaminas A, D e E para uso em bovinos e...",
+        "preco": 35.99,
+        "imagem": "produtos/default.jpg"
+      }
+    },
+    {
+      "model": "venda.produto",
+      "pk": 5,
+      "fields": {
+        "created_at": "2022-12-23T20:55:44.259Z",
+        "updated_at": "2022-12-31T00:38:43.939Z",
+        "nome": "AFTOMUNE",
+        "descricao": "Descrição e indicações : Proteção contra febre aftosa dos bovinos e bubalinos....",
+        "preco": 35.99,
+        "imagem": "produtos/default.jpg"
+      }
+    },
+    {
+      "model": "venda.produto",
+      "pk": 6,
+      "fields": {
+        "created_at": "2022-12-23T20:55:44.259Z",
+        "updated_at": "2022-12-31T00:38:43.939Z",
+        "nome": "ALTRESYN",
+        "descricao": "A SINCRONIZAÇÃO DE FÊMEAS TODA A SEMANA MELHORA O FLUXO E AUMENTA A RENTABILIDAD...",
+        "preco": 35.99,
+        "imagem": "produtos/default.jpg"
+      }
+    },
+    {
+      "model": "venda.produto",
+      "pk": 7,
+      "fields": {
+        "created_at": "2022-12-23T20:55:44.259Z",
+        "updated_at": "2022-12-31T00:38:43.939Z",
+        "nome": "AMIPUR CÃES",
+        "descricao": "É um produto a base de Amitraz, para o uso em&nbsp;cães&nbsp;além do&nbsp;ambiente.   Eficaz&nbsp;pa...",
+        "preco": 35.99,
+        "imagem": "produtos/default.jpg"
+      }
+    },
+    {
+      "model": "venda.produto",
+      "pk": 8,
+      "fields": {
+        "created_at": "2022-12-23T20:55:44.259Z",
+        "updated_at": "2022-12-31T00:38:43.939Z",
+        "nome": "AMOCLOX S",
+        "descricao": "Descrição e indicações : Associação antibiótica bactericida sinérgica de amplo e...",
+        "preco": 35.99,
+        "imagem": "produtos/default.jpg"
+      }
+    },
+    {
+      "model": "venda.produto",
+      "pk": 9,
+      "fields": {
+        "created_at": "2022-12-23T20:55:44.259Z",
+        "updated_at": "2022-12-31T00:38:43.939Z",
+        "nome": "ANASEDAN",
+        "descricao": "Descrição e indicações : Sedativo, analgésico e relaxante muscular para uso em b...",
+        "preco": 35.99,
+        "imagem": "produtos/default.jpg"
+      }
+    },
+    {
+      "model": "venda.produto",
+      "pk": 10,
+      "fields": {
+        "created_at": "2022-12-23T20:55:44.259Z",
+        "updated_at": "2022-12-31T00:38:43.939Z",
+        "nome": "ANASEDAN PET",
+        "descricao": "É um medicamento a base de Xilazina com propriedades tranquilizantes, relaxante...",
+        "preco": 35.99,
+        "imagem": "produtos/default.jpg"
+      }
+    },
+    {
+      "model": "venda.produto",
+      "pk": 11,
+      "fields": {
+        "created_at": "2022-12-23T20:55:44.259Z",
+        "updated_at": "2022-12-31T00:38:43.939Z",
+        "nome": "ANAVAC",
+        "descricao": "Descrição e indicações : Vacina para prevenção da Brucelose Bovina.   Formulação...",
+        "preco": 35.99,
+        "imagem": "produtos/default.jpg"
+      }
+    },
+    {
+      "model": "venda.produto",
+      "pk": 12,
+      "fields": {
+        "created_at": "2022-12-23T20:55:44.259Z",
+        "updated_at": "2022-12-31T00:38:43.939Z",
+        "nome": "BENZOATO HC",
+        "descricao": "Descrição e indicações : Solução pronta para uso, indicada para fêmea bovina qua...",
+        "preco": 35.99,
+        "imagem": "produtos/default.jpg"
+      }
+    },
+    {
+      "model": "venda.produto",
+      "pk": 13,
+      "fields": {
+        "created_at": "2022-12-23T20:55:44.259Z",
+        "updated_at": "2022-12-31T00:38:43.939Z",
+        "nome": "BOTULINOMAX",
+        "descricao": "Descrição e indicações : Proteção contra as principais clostridioses (Botulismo,...",
+        "preco": 35.99,
+        "imagem": "produtos/default.jpg"
+      }
+    },
+    {
+      "model": "venda.produto",
+      "pk": 14,
+      "fields": {
+        "created_at": "2022-12-23T20:55:44.259Z",
+        "updated_at": "2022-12-31T00:38:43.939Z",
+        "nome": "CANEX COMPOSTO",
+        "descricao": "Vermífugo oral de amplo espectro para cães.  &nbsp;BULA: FISPQ:",
+        "preco": 35.99,
+        "imagem": "produtos/default.jpg"
+      }
+    },
+    {
+      "model": "venda.produto",
+      "pk": 15,
+      "fields": {
+        "created_at": "2022-12-23T20:55:44.259Z",
+        "updated_at": "2022-12-31T00:38:43.939Z",
+        "nome": "CANEX COMPOSTO SUSPENSÃ...",
+        "descricao": "É um vermífugo líquido de amplo espectro de ação indicado no combate dos princip...",
+        "preco": 35.99,
+        "imagem": "produtos/default.jpg"
+      }
+    },
+    {
+      "model": "venda.produto",
+      "pk": 16,
+      "fields": {
+        "created_at": "2022-12-23T20:55:44.259Z",
+        "updated_at": "2022-12-31T00:38:43.939Z",
+        "nome": "CANEX ORIGINAL",
+        "descricao": "Vermífugo oral para cães e gatos.  &nbsp;  BULA:",
+        "preco": 35.99,
+        "imagem": "produtos/default.jpg"
+      }
+    },
+    {
+      "model": "venda.produto",
+      "pk": 17,
+      "fields": {
+        "created_at": "2022-12-23T20:55:44.259Z",
+        "updated_at": "2022-12-31T00:38:43.939Z",
+        "nome": "CANEX PLUS 3",
+        "descricao": "Combate os principais vermes dos cães, e o protozoário giárdia.   BULA: FISPQ:",
+        "preco": 35.99,
+        "imagem": "produtos/default.jpg"
+      }
+    },
+    {
+      "model": "venda.produto",
+      "pk": 18,
+      "fields": {
+        "created_at": "2022-12-23T20:55:44.259Z",
+        "updated_at": "2022-12-31T00:38:43.939Z",
+        "nome": "CANEX PREMIUM",
+        "descricao": "Combate os principais vermes dos cães, giardíase e ainda previne a dirofilariose...",
+        "preco": 35.99,
+        "imagem": "produtos/default.jpg"
+      }
+    },
+    {
+      "model": "venda.produto",
+      "pk": 19,
+      "fields": {
+        "created_at": "2022-12-23T20:55:44.259Z",
+        "updated_at": "2022-12-31T00:38:43.939Z",
+        "nome": "CARBEMOTON",
+        "descricao": "Solução injetável à base de carbetocina, indicado para regulação do parto em fêm...",
+        "preco": 35.99,
+        "imagem": "produtos/default.jpg"
+      }
+    },
+    {
+      "model": "venda.produto",
+      "pk": 20,
+      "fields": {
+        "created_at": "2022-12-23T20:55:44.259Z",
+        "updated_at": "2022-12-31T00:38:43.939Z",
+        "nome": "CARDALIS",
+        "descricao": "Comprimido mastigável e palatável, que contém em sua formulação os ingredientes...",
+        "preco": 35.99,
+        "imagem": "produtos/default.jpg"
+      }
+    },
+    {
+      "model": "venda.produto",
+      "pk": 21,
+      "fields": {
+        "created_at": "2022-12-23T20:55:44.259Z",
+        "updated_at": "2022-12-31T00:38:43.939Z",
+        "nome": "CARPRODYL",
+        "descricao": "À base de carprofeno, Carprodyl é um anti-inflamatório não esteroidal, com&nbsp;ação...",
+        "preco": 35.99,
+        "imagem": "produtos/default.jpg"
+      }
+    },
+    {
+      "model": "venda.produto",
+      "pk": 22,
+      "fields": {
+        "created_at": "2022-12-23T20:55:44.259Z",
+        "updated_at": "2022-12-31T00:38:43.939Z",
+        "nome": "CEFAVET",
+        "descricao": "Descrição e indicações : Moderno antibiótico bactericida de amplo espectro e de...",
+        "preco": 35.99,
+        "imagem": "produtos/default.jpg"
+      }
+    },
+    {
+      "model": "venda.produto",
+      "pk": 23,
+      "fields": {
+        "created_at": "2022-12-23T20:55:44.259Z",
+        "updated_at": "2022-12-31T00:38:43.939Z",
+        "nome": "CEVAC BRON 120L",
+        "descricao": "CEVAC BRON 120 L é uma vacina viva liofilizada que contém o virus vivo da&nbsp;Bronqu...",
+        "preco": 35.99,
+        "imagem": "produtos/default.jpg"
+      }
+    },
+    {
+      "model": "venda.produto",
+      "pk": 24,
+      "fields": {
+        "created_at": "2022-12-23T20:55:44.259Z",
+        "updated_at": "2022-12-31T00:38:43.939Z",
+        "nome": "CEVAC CORYMUNE 4K",
+        "descricao": "CEVAC CORYMUNE 4K contém uma combinação inativada dos sorotipos A, B&nbsp;e C de Avib...",
+        "preco": 35.99,
+        "imagem": "produtos/default.jpg"
+      }
+    },
+    {
+      "model": "venda.produto",
+      "pk": 25,
+      "fields": {
+        "created_at": "2022-12-23T20:55:44.259Z",
+        "updated_at": "2022-12-31T00:38:43.939Z",
+        "nome": "CEVAC CORYMUNE 7K",
+        "descricao": "CEVAC CORYMUNE 7K contém uma combinação inativada dos sorotipos A, B&nbsp;e C do Avib...",
+        "preco": 35.99,
+        "imagem": "produtos/default.jpg"
+      }
+    },
+    {
+      "model": "venda.produto",
+      "pk": 26,
+      "fields": {
+        "created_at": "2022-12-23T20:55:44.259Z",
+        "updated_at": "2022-12-31T00:38:43.939Z",
+        "nome": "CEVAC DILUENTE OCULAR",
+        "descricao": "Indicações Solução salina fosfatada colorida.   Cevac Diluente Ocular é recomend...",
+        "preco": 35.99,
+        "imagem": "produtos/default.jpg"
+      }
+    },
+    {
+      "model": "venda.produto",
+      "pk": 27,
+      "fields": {
+        "created_at": "2022-12-23T20:55:44.259Z",
+        "updated_at": "2022-12-31T00:38:43.939Z",
+        "nome": "CEVAC EGGMUNE",
+        "descricao": "Cevac Eggmune&nbsp;é uma vacina inativada que previne a Bronquite Infecciosa e a pneu...",
+        "preco": 35.99,
+        "imagem": "produtos/default.jpg"
+      }
+    },
+    {
+      "model": "venda.produto",
+      "pk": 28,
+      "fields": {
+        "created_at": "2022-12-23T20:55:44.259Z",
+        "updated_at": "2022-12-31T00:38:43.939Z",
+        "nome": "CEVAC IBD L",
+        "descricao": "CEVAC IBD L contém a cepa viva Winterfield 2512 do vírus da Doença de&nbsp;Gumboro na...",
+        "preco": 35.99,
+        "imagem": "produtos/default.jpg"
+      }
+    },
+    {
+      "model": "venda.produto",
+      "pk": 29,
+      "fields": {
+        "created_at": "2022-12-23T20:55:44.259Z",
+        "updated_at": "2022-12-31T00:38:43.939Z",
+        "nome": "CEVAC IBRAS L",
+        "descricao": "Cevac IBras é uma vacina viva lio lizada&nbsp;de Bronquite infecciosa&nbsp;contendo cepa b...",
+        "preco": 35.99,
+        "imagem": "produtos/default.jpg"
+      }
+    },
+    {
+      "model": "venda.produto",
+      "pk": 30,
+      "fields": {
+        "created_at": "2022-12-23T20:55:44.259Z",
+        "updated_at": "2022-12-31T00:38:43.939Z",
+        "nome": "CEVAC MASS L",
+        "descricao": "CEVAC MASS L contém a cepa Massachusetts B48 do vírus da Bronquite&nbsp;Infecciosa na...",
+        "preco": 35.99,
+        "imagem": "produtos/default.jpg"
+      }
+    },
+    {
+      "model": "venda.produto",
+      "pk": 31,
+      "fields": {
+        "created_at": "2022-12-23T20:55:44.259Z",
+        "updated_at": "2022-12-31T00:38:43.939Z",
+        "nome": "CEVAC MAXIMUNE PRO",
+        "descricao": "Composição   Vírus de Newcastle - estirpe Lasota Vírus da Bronquite Infecciosa -...",
+        "preco": 35.99,
+        "imagem": "produtos/default.jpg"
+      }
+    },
+    {
+      "model": "venda.produto",
+      "pk": 32,
+      "fields": {
+        "created_at": "2022-12-23T20:55:44.259Z",
+        "updated_at": "2022-12-31T00:38:43.939Z",
+        "nome": "CEVAC MG F",
+        "descricao": "CEVAC MG-F contém a cepa F do Mycoplasma gallisepticum viva, atenuada e&nbsp;apatogên...",
+        "preco": 35.99,
+        "imagem": "produtos/default.jpg"
+      }
+    },
+    {
+      "model": "venda.produto",
+      "pk": 33,
+      "fields": {
+        "created_at": "2022-12-23T20:55:44.259Z",
+        "updated_at": "2022-12-31T00:38:43.939Z",
+        "nome": "CEVAC NB L",
+        "descricao": "CEVAC NB L contém a cepa Massachusetts B48 do vírus da Bronquite&nbsp;Infecciosa e a...",
+        "preco": 35.99,
+        "imagem": "produtos/default.jpg"
+      }
+    },
+    {
+      "model": "venda.produto",
+      "pk": 34,
+      "fields": {
+        "created_at": "2022-12-23T20:55:44.259Z",
+        "updated_at": "2022-12-31T00:38:43.939Z",
+        "nome": "CEVAC SAL BAC",
+        "descricao": "Vacina preparada a partir de cultura pura inativada e concentrada de&nbsp;Salmonella...",
+        "preco": 35.99,
+        "imagem": "produtos/default.jpg"
+      }
+    },
+    {
+      "model": "venda.produto",
+      "pk": 35,
+      "fields": {
+        "created_at": "2022-12-23T20:55:44.259Z",
+        "updated_at": "2022-12-31T00:38:43.939Z",
+        "nome": "CEVAC S GALLINARUM",
+        "descricao": "CEVAC S. GALLINARUM contém uma cepa viva de Salmonella Gallinarum&nbsp;(cepa 9R), nat...",
+        "preco": 35.99,
+        "imagem": "produtos/default.jpg"
+      }
+    },
+    {
+      "model": "venda.produto",
+      "pk": 36,
+      "fields": {
+        "created_at": "2022-12-23T20:55:44.259Z",
+        "updated_at": "2022-12-31T00:38:43.939Z",
+        "nome": "CEVAC TRANSMUNE IBD ",
+        "descricao": "Contém o vírus de Gumboro da cepa Winterfield 2512 na forma de Complexoimune....",
+        "preco": 35.99,
+        "imagem": "produtos/default.jpg"
+      }
+    },
+    {
+      "model": "venda.produto",
+      "pk": 37,
+      "fields": {
+        "created_at": "2022-12-23T20:55:44.259Z",
+        "updated_at": "2022-12-31T00:38:43.939Z",
+        "nome": "CEVAMUNE",
+        "descricao": "Cada 20 g de CEVAMUNE contém:   Tiosulfato de sódio .................... 1,5 g...",
+        "preco": 35.99,
+        "imagem": "produtos/default.jpg"
+      }
+    },
+    {
+      "model": "venda.produto",
+      "pk": 38,
+      "fields": {
+        "created_at": "2022-12-23T20:55:44.259Z",
+        "updated_at": "2022-12-31T00:38:43.939Z",
+        "nome": "CEVAMUTIN",
+        "descricao": "No tratamento da disenteria suína, pneumonia enzoótica&nbsp;suína, redução da tosse,...",
+        "preco": 35.99,
+        "imagem": "produtos/default.jpg"
+      }
+    },
+    {
+      "model": "venda.produto",
+      "pk": 39,
+      "fields": {
+        "created_at": "2022-12-23T20:55:44.259Z",
+        "updated_at": "2022-12-31T00:38:43.939Z",
+        "nome": "CEVAZURIL",
+        "descricao": "É um composto anticoccidiano à base de Toltrazuril destinado a prevenção dos sin...",
+        "preco": 35.99,
+        "imagem": "produtos/default.jpg"
+      }
+    },
+    {
+      "model": "venda.produto",
+      "pk": 40,
+      "fields": {
+        "created_at": "2022-12-23T20:55:44.259Z",
+        "updated_at": "2022-12-31T00:38:43.939Z",
+        "nome": "CICATRILEX PRATA",
+        "descricao": "Descrição e indicações : Cicatrizante preventivo e curativo de bicheiras para us...",
+        "preco": 35.99,
+        "imagem": "produtos/default.jpg"
+      }
+    },
+    {
+      "model": "venda.produto",
+      "pk": 41,
+      "fields": {
+        "created_at": "2022-12-23T20:55:44.259Z",
+        "updated_at": "2022-12-31T00:38:43.939Z",
+        "nome": "CIPROFORT",
+        "descricao": "Antimicrobiano em pó solúvel, à base de&nbsp;Ciprofloxacino, quinolona de 2ª geração,...",
+        "preco": 35.99,
+        "imagem": "produtos/default.jpg"
+      }
+    },
+    {
+      "model": "venda.produto",
+      "pk": 42,
+      "fields": {
+        "created_at": "2022-12-23T20:55:44.259Z",
+        "updated_at": "2022-12-31T00:38:43.939Z",
+        "nome": "CIRCOMUNE",
+        "descricao": "CIRCOMUNE&nbsp;é uma vacina viva que contém a cepa Del Ros para prevenção da&nbsp;Anemia I...",
+        "preco": 35.99,
+        "imagem": "produtos/default.jpg"
+      }
+    },
+    {
+      "model": "venda.produto",
+      "pk": 43,
+      "fields": {
+        "created_at": "2022-12-23T20:55:44.259Z",
+        "updated_at": "2022-12-31T00:38:43.939Z",
+        "nome": "CIRCOVAC",
+        "descricao": "DESCRIÇÃO   É uma vacina inativada, contendo adjuvante oleoso, para a&nbsp;prevenção...",
+        "preco": 35.99,
+        "imagem": "produtos/default.jpg"
+      }
+    },
+    {
+      "model": "venda.produto",
+      "pk": 44,
+      "fields": {
+        "created_at": "2022-12-23T20:55:44.259Z",
+        "updated_at": "2022-12-31T00:38:43.939Z",
+        "nome": "COGLAPIX",
+        "descricao": "Vacina Inativada contra o Actinobacillus pleuropneumoniae em&nbsp;suínos.   COMPOSIÇÃ...",
+        "preco": 35.99,
+        "imagem": "produtos/default.jpg"
+      }
+    },
+    {
+      "model": "venda.produto",
+      "pk": 45,
+      "fields": {
+        "created_at": "2022-12-23T20:55:44.259Z",
+        "updated_at": "2022-12-31T00:38:43.939Z",
+        "nome": "COMBO POUR ON",
+        "descricao": "Descrição e indicações : Produto carrapaticida, mosquicida e bernicida pronto pa...",
+        "preco": 35.99,
+        "imagem": "produtos/default.jpg"
+      }
+    },
+    {
+      "model": "venda.produto",
+      "pk": 46,
+      "fields": {
+        "created_at": "2022-12-23T20:55:44.259Z",
+        "updated_at": "2022-12-31T00:38:43.939Z",
+        "nome": "CYPERCLOR PLUS Pour On",
+        "descricao": "Descrição e indicações : Carrapaticida, mosquicida, bernicida, sarnicida e piolh...",
+        "preco": 35.99,
+        "imagem": "produtos/default.jpg"
+      }
+    },
+    {
+      "model": "venda.produto",
+      "pk": 47,
+      "fields": {
+        "created_at": "2022-12-23T20:55:44.259Z",
+        "updated_at": "2022-12-31T00:38:43.939Z",
+        "nome": "DEXACORT",
+        "descricao": "Descrição e indicações : Potente anti-inflamatório esteroidal com ação antiflogí...",
+        "preco": 35.99,
+        "imagem": "produtos/default.jpg"
+      }
+    },
+    {
+      "model": "venda.produto",
+      "pk": 48,
+      "fields": {
+        "created_at": "2022-12-23T20:55:44.259Z",
+        "updated_at": "2022-12-31T00:38:43.939Z",
+        "nome": "DILUENTE ESTÉRIL BOUBA",
+        "descricao": "Diluente estéril para vacinação via punção de membrana de asa   Indicações   Dil...",
+        "preco": 35.99,
+        "imagem": "produtos/default.jpg"
+      }
+    },
+    {
+      "model": "venda.produto",
+      "pk": 49,
+      "fields": {
+        "created_at": "2022-12-23T20:55:44.259Z",
+        "updated_at": "2022-12-31T00:38:43.939Z",
+        "nome": "DILUENTE ESTÉRIL CEVAC...",
+        "descricao": "Solução fosfatada alcalina.   Indicações   Recomendado para uso como diluente da...",
+        "preco": 35.99,
+        "imagem": "produtos/default.jpg"
+      }
+    },
+    {
+      "model": "venda.produto",
+      "pk": 50,
+      "fields": {
+        "created_at": "2022-12-23T20:55:44.259Z",
+        "updated_at": "2022-12-31T00:38:43.939Z",
+        "nome": "DILUENTE ESTÉRIL MAREK",
+        "descricao": "Solução fosfatada adicionada de sacarose e vermelho de fenol.   Indicações   Rec...",
+        "preco": 35.99,
+        "imagem": "produtos/default.jpg"
+      }
+    },
+    {
+      "model": "venda.produto",
+      "pk": 51,
+      "fields": {
+        "created_at": "2022-12-23T20:55:44.259Z",
+        "updated_at": "2022-12-31T00:38:43.939Z",
+        "nome": "DIMESOL",
+        "descricao": "Descrição   DIMESOL INJETÁVEL é um produto à base de dimetilsulfóxido (DMSO), um...",
+        "preco": 35.99,
+        "imagem": "produtos/default.jpg"
+      }
+    },
+    {
+      "model": "venda.produto",
+      "pk": 52,
+      "fields": {
+        "created_at": "2022-12-23T20:55:44.259Z",
+        "updated_at": "2022-12-31T00:38:43.939Z",
+        "nome": "DOPALEN",
+        "descricao": "Descrição e indicações : Anestésico geral para uso em equinos particularmente na...",
+        "preco": 35.99,
+        "imagem": "produtos/default.jpg"
+      }
+    },
+    {
+      "model": "venda.produto",
+      "pk": 53,
+      "fields": {
+        "created_at": "2022-12-23T20:55:44.259Z",
+        "updated_at": "2022-12-31T00:38:43.939Z",
+        "nome": "DOPALEN PET",
+        "descricao": "É um anestésico geral injetável à base de ketamina, administrado por via endoven...",
+        "preco": 35.99,
+        "imagem": "produtos/default.jpg"
+      }
+    },
+    {
+      "model": "venda.produto",
+      "pk": 54,
+      "fields": {
+        "created_at": "2022-12-23T20:55:44.259Z",
+        "updated_at": "2022-12-31T00:38:43.939Z",
+        "nome": "DOUXO® S3 CALM MOUSSE",
+        "descricao": "Proteção inovadora para a pele de cães e gatos   DOUXO® S3 CALM MOUSSE contém Op...",
+        "preco": 35.99,
+        "imagem": "produtos/default.jpg"
+      }
+    },
+    {
+      "model": "venda.produto",
+      "pk": 55,
+      "fields": {
+        "created_at": "2022-12-23T20:55:44.259Z",
+        "updated_at": "2022-12-31T00:38:43.939Z",
+        "nome": "DOUXO® S3 CALM SHAMPOO",
+        "descricao": "Limpeza suave e hidratação profunda da pele de cães e gatos indicado para peles...",
+        "preco": 35.99,
+        "imagem": "produtos/default.jpg"
+      }
+    },
+    {
+      "model": "venda.produto",
+      "pk": 56,
+      "fields": {
+        "created_at": "2022-12-23T20:55:44.259Z",
+        "updated_at": "2022-12-31T00:38:43.939Z",
+        "nome": "DOUXO® S3 SEB MOUSSE",
+        "descricao": "Proteção inovadora para a pele de cães e gatos   DOUXO® S3 SEB MOUSSE possui uma...",
+        "preco": 35.99,
+        "imagem": "produtos/default.jpg"
+      }
+    },
+    {
+      "model": "venda.produto",
+      "pk": 57,
+      "fields": {
+        "created_at": "2022-12-23T20:55:44.259Z",
+        "updated_at": "2022-12-31T00:38:43.939Z",
+        "nome": "DOUXO® S3 SEB SHAMPOO",
+        "descricao": "  A nova onda de proteção da pele de cães e gatos&nbsp;  DOUXO® S3 SEB SHAMPOO possui...",
+        "preco": 35.99,
+        "imagem": "produtos/default.jpg"
+      }
+    },
+    {
+      "model": "venda.produto",
+      "pk": 58,
+      "fields": {
+        "created_at": "2022-12-23T20:55:44.259Z",
+        "updated_at": "2022-12-31T00:38:43.939Z",
+        "nome": "Douxo Calm Shampoo",
+        "descricao": "É uma combinação de ingredientes que proporcionam limpeza profunda e hidratação...",
+        "preco": 35.99,
+        "imagem": "produtos/default.jpg"
+      }
+    },
+    {
+      "model": "venda.produto",
+      "pk": 59,
+      "fields": {
+        "created_at": "2022-12-23T20:55:44.259Z",
+        "updated_at": "2022-12-31T00:38:43.939Z",
+        "nome": "Douxo Calm Spray Microe...",
+        "descricao": "É uma combinação de ingredientes que proporcionam hidratação da pele sensível de...",
+        "preco": 35.99,
+        "imagem": "produtos/default.jpg"
+      }
+    },
+    {
+      "model": "venda.produto",
+      "pk": 60,
+      "fields": {
+        "created_at": "2022-12-23T20:55:44.259Z",
+        "updated_at": "2022-12-31T00:38:43.939Z",
+        "nome": "Douxo Manutenção Shampo...",
+        "descricao": "É uma combinação de ingredientes que promovem a limpeza e hidratação da pele de...",
+        "preco": 35.99,
+        "imagem": "produtos/default.jpg"
+      }
+    },
+    {
+      "model": "venda.produto",
+      "pk": 61,
+      "fields": {
+        "created_at": "2022-12-23T20:55:44.259Z",
+        "updated_at": "2022-12-31T00:38:43.939Z",
+        "nome": "DOUXO S3 CARE SHAMPOO",
+        "descricao": "DOUXO® S3 CARE SHAMPOO é um produto especialmente desenvolvido para uso regular...",
+        "preco": 35.99,
+        "imagem": "produtos/default.jpg"
+      }
+    },
+    {
+      "model": "venda.produto",
+      "pk": 62,
+      "fields": {
+        "created_at": "2022-12-23T20:55:44.259Z",
+        "updated_at": "2022-12-31T00:38:43.939Z",
+        "nome": "Douxo Seb Shampoo",
+        "descricao": "É uma combinação de ingredientes que proporcionam higiene profunda, controle da...",
+        "preco": 35.99,
+        "imagem": "produtos/default.jpg"
+      }
+    },
+    {
+      "model": "venda.produto",
+      "pk": 63,
+      "fields": {
+        "created_at": "2022-12-23T20:55:44.259Z",
+        "updated_at": "2022-12-31T00:38:43.939Z",
+        "nome": "Douxo Seb Spray Microem...",
+        "descricao": "Possui uma combinação única de ingredientes que proporcionam controle da oleosid...",
+        "preco": 35.99,
+        "imagem": "produtos/default.jpg"
+      }
+    },
+    {
+      "model": "venda.produto",
+      "pk": 64,
+      "fields": {
+        "created_at": "2022-12-23T20:55:44.259Z",
+        "updated_at": "2022-12-31T00:38:43.939Z",
+        "nome": "ENROPET",
+        "descricao": "É um antibiótico oral a base de enrofloxacina de amplo espectro com palatabiliza...",
+        "preco": 35.99,
+        "imagem": "produtos/default.jpg"
+      }
+    },
+    {
+      "model": "venda.produto",
+      "pk": 65,
+      "fields": {
+        "created_at": "2022-12-23T20:55:44.259Z",
+        "updated_at": "2022-12-31T00:38:43.939Z",
+        "nome": "EPRECIS",
+        "descricao": "Indicações:&nbsp;Endectocida indicado para o controle dos seguintes parasitas bovinos...",
+        "preco": 35.99,
+        "imagem": "produtos/default.jpg"
+      }
+    },
+    {
+      "model": "venda.produto",
+      "pk": 66,
+      "fields": {
+        "created_at": "2022-12-23T20:55:44.259Z",
+        "updated_at": "2022-12-31T00:38:43.939Z",
+        "nome": "EQUIPALANOZA ORAL ",
+        "descricao": "Poder anti-inflamatório da fenilbutazona para ser fornecido por via oral, propor...",
+        "preco": 35.99,
+        "imagem": "produtos/default.jpg"
+      }
+    },
+    {
+      "model": "venda.produto",
+      "pk": 67,
+      "fields": {
+        "created_at": "2022-12-23T20:55:44.259Z",
+        "updated_at": "2022-12-31T00:38:43.939Z",
+        "nome": "EQUIPALAZONE INJETÁVEL",
+        "descricao": "Descrição e indicações : Anti-inflamatório não-esteroidal com potente ação terap...",
+        "preco": 35.99,
+        "imagem": "produtos/default.jpg"
+      }
+    },
+    {
+      "model": "venda.produto",
+      "pk": 68,
+      "fields": {
+        "created_at": "2022-12-23T20:55:44.259Z",
+        "updated_at": "2022-12-31T00:38:43.939Z",
+        "nome": "FELIWAY CLASSIC",
+        "descricao": "Líder no mercado de comportamento felino com mais de 10 anos de sucesso&nbsp;na Europ...",
+        "preco": 35.99,
+        "imagem": "produtos/default.jpg"
+      }
+    },
+    {
+      "model": "venda.produto",
+      "pk": 69,
+      "fields": {
+        "created_at": "2022-12-23T20:55:44.259Z",
+        "updated_at": "2022-12-31T00:38:43.939Z",
+        "nome": "FELIWAY FRIENDS",
+        "descricao": "Gatos por sua natureza tem hábitos solitários, havendo uma necessidade de caça p...",
+        "preco": 35.99,
+        "imagem": "produtos/default.jpg"
+      }
+    },
+    {
+      "model": "venda.produto",
+      "pk": 70,
+      "fields": {
+        "created_at": "2022-12-23T20:55:44.259Z",
+        "updated_at": "2022-12-31T00:38:43.939Z",
+        "nome": "FERTCOR",
+        "descricao": "BENEFÍCIOS:   Após a aplicação nas éguas Fertcor promove a ovulação mais rápida...",
+        "preco": 35.99,
+        "imagem": "produtos/default.jpg"
+      }
+    },
+    {
+      "model": "venda.produto",
+      "pk": 71,
+      "fields": {
+        "created_at": "2022-12-23T20:55:44.259Z",
+        "updated_at": "2022-12-31T00:38:43.939Z",
+        "nome": "FIPROLEX DROP SPOT",
+        "descricao": "Produto a base de Fipronil utilizado para o combate e controle de pulgas em gato...",
+        "preco": 35.99,
+        "imagem": "produtos/default.jpg"
+      }
+    },
+    {
+      "model": "venda.produto",
+      "pk": 72,
+      "fields": {
+        "created_at": "2022-12-23T20:55:44.259Z",
+        "updated_at": "2022-12-31T00:38:43.939Z",
+        "nome": "FLEXIFER",
+        "descricao": "Ferro dextrano concentrado para tratamento de anemias ferroprivas em leitões....",
+        "preco": 35.99,
+        "imagem": "produtos/default.jpg"
+      }
+    },
+    {
+      "model": "venda.produto",
+      "pk": 73,
+      "fields": {
+        "created_at": "2022-12-23T20:55:44.259Z",
+        "updated_at": "2022-12-31T00:38:43.939Z",
+        "nome": "FLUMEGAM",
+        "descricao": "No tratamento de inflamações agudas (MMA) e crônicas dos aparelho locomotor.   I...",
+        "preco": 35.99,
+        "imagem": "produtos/default.jpg"
+      }
+    },
+    {
+      "model": "venda.produto",
+      "pk": 74,
+      "fields": {
+        "created_at": "2022-12-23T20:55:44.259Z",
+        "updated_at": "2022-12-31T00:38:43.939Z",
+        "nome": "FLURON GOLD",
+        "descricao": "Descrição e indicações : Moderna e inovadora formulação carrapaticida, mosquicid...",
+        "preco": 35.99,
+        "imagem": "produtos/default.jpg"
+      }
+    },
+    {
+      "model": "venda.produto",
+      "pk": 75,
+      "fields": {
+        "created_at": "2022-12-23T20:55:44.259Z",
+        "updated_at": "2022-12-31T00:38:43.939Z",
+        "nome": "Forceris",
+        "descricao": "Única ação para um excelente início Uma nova forma de manejo dos leitões nos pri...",
+        "preco": 35.99,
+        "imagem": "produtos/default.jpg"
+      }
+    },
+    {
+      "model": "venda.produto",
+      "pk": 76,
+      "fields": {
+        "created_at": "2022-12-23T20:55:44.259Z",
+        "updated_at": "2022-12-31T00:38:43.939Z",
+        "nome": "FORTIFIC MO",
+        "descricao": "Fortific é um revitalizante e estimulante orgânico, composto por aminoácidos e m...",
+        "preco": 35.99,
+        "imagem": "produtos/default.jpg"
+      }
+    },
+    {
+      "model": "venda.produto",
+      "pk": 77,
+      "fields": {
+        "created_at": "2022-12-23T20:55:44.259Z",
+        "updated_at": "2022-12-31T00:38:43.939Z",
+        "nome": "GASTROZOL PASTA",
+        "descricao": "Produto a base de omeprazol utilizado para tratamento e prevenção de gastrites e...",
+        "preco": 35.99,
+        "imagem": "produtos/default.jpg"
+      }
+    },
+    {
+      "model": "venda.produto",
+      "pk": 78,
+      "fields": {
+        "created_at": "2022-12-23T20:55:44.259Z",
+        "updated_at": "2022-12-31T00:38:43.939Z",
+        "nome": "HANDICAP",
+        "descricao": "Descrição e indicações : Vermífugo de amplo espectro para controle das verminose...",
+        "preco": 35.99,
+        "imagem": "produtos/default.jpg"
+      }
+    },
+    {
+      "model": "venda.produto",
+      "pk": 79,
+      "fields": {
+        "created_at": "2022-12-23T20:55:44.259Z",
+        "updated_at": "2022-12-31T00:38:43.939Z",
+        "nome": "HERTAFER",
+        "descricao": "Ferro Dextrano, na concentração de 10%&nbsp;enriquecido com Vitamina B12, para&nbsp;suplem...",
+        "preco": 35.99,
+        "imagem": "produtos/default.jpg"
+      }
+    },
+    {
+      "model": "venda.produto",
+      "pk": 80,
+      "fields": {
+        "created_at": "2022-12-23T20:55:44.259Z",
+        "updated_at": "2022-12-31T00:38:43.939Z",
+        "nome": "HERTALIQ",
+        "descricao": "Vacina Inativada Contra Raiva, para prevenção em cães e gatos.   Instruções de U...",
+        "preco": 35.99,
+        "imagem": "produtos/default.jpg"
+      }
+    },
+    {
+      "model": "venda.produto",
+      "pk": 81,
+      "fields": {
+        "created_at": "2022-12-23T20:55:44.259Z",
+        "updated_at": "2022-12-31T00:38:43.939Z",
+        "nome": "HERTAVITA",
+        "descricao": "Descrição e indicações : Solução injetável contendo vitaminas, aminoácidos e min...",
+        "preco": 35.99,
+        "imagem": "produtos/default.jpg"
+      }
+    },
+    {
+      "model": "venda.produto",
+      "pk": 82,
+      "fields": {
+        "created_at": "2022-12-23T20:55:44.259Z",
+        "updated_at": "2022-12-31T00:38:43.939Z",
+        "nome": "HYOGEN",
+        "descricao": "Fórmula:   Preparada a partir do cultivo de&nbsp;Mycoplasma hyopneumoniae&nbsp;inativado,...",
+        "preco": 35.99,
+        "imagem": "produtos/default.jpg"
+      }
+    },
+    {
+      "model": "venda.produto",
+      "pk": 83,
+      "fields": {
+        "created_at": "2022-12-23T20:55:44.259Z",
+        "updated_at": "2022-12-31T00:38:43.939Z",
+        "nome": "INDIGEST",
+        "descricao": "Descrição e indicações : Produto exclusivo a base de membutona indicado na estim...",
+        "preco": 35.99,
+        "imagem": "produtos/default.jpg"
+      }
+    },
+    {
+      "model": "venda.produto",
+      "pk": 84,
+      "fields": {
+        "created_at": "2022-12-23T20:55:44.259Z",
+        "updated_at": "2022-12-31T00:38:43.939Z",
+        "nome": "Infervac",
+        "descricao": "Imunoestimulante composto por células inativadas de Propionibacterium acnes, lip...",
+        "preco": 35.99,
+        "imagem": "produtos/default.jpg"
+      }
+    },
+    {
+      "model": "venda.produto",
+      "pk": 85,
+      "fields": {
+        "created_at": "2022-12-23T20:55:44.259Z",
+        "updated_at": "2022-12-31T00:38:43.939Z",
+        "nome": "INOMUNE",
+        "descricao": "Vacina contra Cinomose, Hepatite Infecciosa, Parainfluenza, Parvovirose, Coronav...",
+        "preco": 35.99,
+        "imagem": "produtos/default.jpg"
+      }
+    },
+    {
+      "model": "venda.produto",
+      "pk": 86,
+      "fields": {
+        "created_at": "2022-12-23T20:55:44.259Z",
+        "updated_at": "2022-12-31T00:38:43.939Z",
+        "nome": "KETOFEN 10%",
+        "descricao": "Descrição e indicações : Anti-inflamatório não esteroidal, de dupla via (vias da...",
+        "preco": 35.99,
+        "imagem": "produtos/default.jpg"
+      }
+    },
+    {
+      "model": "venda.produto",
+      "pk": 87,
+      "fields": {
+        "created_at": "2022-12-23T20:55:44.259Z",
+        "updated_at": "2022-12-31T00:38:43.939Z",
+        "nome": "KETOFEN 20 mg",
+        "descricao": "Antinflamatório não esteroidal (AINES), antipirético e analgésico a base de ceto...",
+        "preco": 35.99,
+        "imagem": "produtos/default.jpg"
+      }
+    },
+    {
+      "model": "venda.produto",
+      "pk": 88,
+      "fields": {
+        "created_at": "2022-12-23T20:55:44.259Z",
+        "updated_at": "2022-12-31T00:38:43.939Z",
+        "nome": "KETOFEN 5 mg",
+        "descricao": "Antinflamatório não esteroidal (AINES), antipirético e analgésico a base de ceto...",
+        "preco": 35.99,
+        "imagem": "produtos/default.jpg"
+      }
+    },
+    {
+      "model": "venda.produto",
+      "pk": 89,
+      "fields": {
+        "created_at": "2022-12-23T20:55:44.259Z",
+        "updated_at": "2022-12-31T00:38:43.939Z",
+        "nome": "LEISH-TEC",
+        "descricao": "LeishTec é uma Vacina Recombinante para prevenção de Leishmaniose Visceral Canin...",
+        "preco": 35.99,
+        "imagem": "produtos/default.jpg"
+      }
+    },
+    {
+      "model": "venda.produto",
+      "pk": 90,
+      "fields": {
+        "created_at": "2022-12-23T20:55:44.259Z",
+        "updated_at": "2022-12-31T00:38:43.939Z",
+        "nome": "LEUCOMAG 30 PR",
+        "descricao": "FÓRMULA Cada 100 gramas contém: Leucomicina........................................",
+        "preco": 35.99,
+        "imagem": "produtos/default.jpg"
+      }
+    },
+    {
+      "model": "venda.produto",
+      "pk": 91,
+      "fields": {
+        "created_at": "2022-12-23T20:55:44.259Z",
+        "updated_at": "2022-12-31T00:38:43.939Z",
+        "nome": "LISPEC 15%",
+        "descricao": "Associação antibiótica à base de&nbsp;Lincomicina e Espectinomicina, com&nbsp;amplo espect...",
+        "preco": 35.99,
+        "imagem": "produtos/default.jpg"
+      }
+    },
+    {
+      "model": "venda.produto",
+      "pk": 92,
+      "fields": {
+        "created_at": "2022-12-23T20:55:44.259Z",
+        "updated_at": "2022-12-31T00:38:43.939Z",
+        "nome": "LUTEGLAN",
+        "descricao": "Descrição e indicações : Luteolítico indicado para uso em bovinos quando a regre...",
+        "preco": 35.99,
+        "imagem": "produtos/default.jpg"
+      }
+    },
+    {
+      "model": "venda.produto",
+      "pk": 93,
+      "fields": {
+        "created_at": "2022-12-23T20:55:44.259Z",
+        "updated_at": "2022-12-31T00:38:43.939Z",
+        "nome": "MARBOPET",
+        "descricao": "É um antibiótico oral palatável para cães que contém em sua fórmula a marbofloxa...",
+        "preco": 35.99,
+        "imagem": "produtos/default.jpg"
+      }
+    },
+    {
+      "model": "venda.produto",
+      "pk": 94,
+      "fields": {
+        "created_at": "2022-12-23T20:55:44.259Z",
+        "updated_at": "2022-12-31T00:38:43.939Z",
+        "nome": "MARBOX®",
+        "descricao": "Descrição   Indicado para o tratamento de afecções em bovinos e suínos, causadas...",
+        "preco": 35.99,
+        "imagem": "produtos/default.jpg"
+      }
+    },
+    {
+      "model": "venda.produto",
+      "pk": 95,
+      "fields": {
+        "created_at": "2022-12-23T20:55:44.259Z",
+        "updated_at": "2022-12-31T00:38:43.939Z",
+        "nome": "MARCOVIT C",
+        "descricao": "Solução pronta para uso indicado em casos de carência de vitamina C provocados p...",
+        "preco": 35.99,
+        "imagem": "produtos/default.jpg"
+      }
+    },
+    {
+      "model": "venda.produto",
+      "pk": 96,
+      "fields": {
+        "created_at": "2022-12-23T20:55:44.259Z",
+        "updated_at": "2022-12-31T00:38:43.939Z",
+        "nome": "MULTI-DOG",
+        "descricao": "Vacina contra Cinomose, Hepatite Infecciosa, Parainfluenza, Parvovirose, Coronav...",
+        "preco": 35.99,
+        "imagem": "produtos/default.jpg"
+      }
+    },
+    {
+      "model": "venda.produto",
+      "pk": 97,
+      "fields": {
+        "created_at": "2022-12-23T20:55:44.259Z",
+        "updated_at": "2022-12-31T00:38:43.939Z",
+        "nome": "MYPET AEROSOL",
+        "descricao": "Para o controle de pulgas e carrapatos do&nbsp;ambiente, produto a base de D-Fenotrin...",
+        "preco": 35.99,
+        "imagem": "produtos/default.jpg"
+      }
+    },
+    {
+      "model": "venda.produto",
+      "pk": 98,
+      "fields": {
+        "created_at": "2022-12-23T20:55:44.259Z",
+        "updated_at": "2022-12-31T00:38:43.939Z",
+        "nome": "NGF-5",
+        "descricao": "Descrição e indicações : Indicado para equinos, bovinos, caninos e suínos nas lu...",
+        "preco": 35.99,
+        "imagem": "produtos/default.jpg"
+      }
+    },
+    {
+      "model": "venda.produto",
+      "pk": 99,
+      "fields": {
+        "created_at": "2022-12-23T20:55:44.259Z",
+        "updated_at": "2022-12-31T00:38:43.939Z",
+        "nome": "NIGLUMINE",
+        "descricao": "Descrição e indicações : Anti-inflamatório não esteroidal, indicado para dores v...",
+        "preco": 35.99,
+        "imagem": "produtos/default.jpg"
+      }
+    },
+    {
+      "model": "venda.produto",
+      "pk": 100,
+      "fields": {
+        "created_at": "2022-12-23T20:55:44.259Z",
+        "updated_at": "2022-12-31T00:38:43.939Z",
+        "nome": "NOVAMUNE",
+        "descricao": "Composição: Novamune é uma vacina com complexo-imune do vírus da Doença de Gumbo...",
+        "preco": 35.99,
+        "imagem": "produtos/default.jpg"
+      }
+    },
+    {
+      "model": "venda.produto",
+      "pk": 101,
+      "fields": {
+        "created_at": "2022-12-23T20:55:44.259Z",
+        "updated_at": "2022-12-31T00:38:43.939Z",
+        "nome": "OTODEM AURICLEAN",
+        "descricao": "Otodem Auriclean tem como finalidade a higiene do pavilhão auricular e conduto a...",
+        "preco": 35.99,
+        "imagem": "produtos/default.jpg"
+      }
+    },
+    {
+      "model": "venda.produto",
+      "pk": 102,
+      "fields": {
+        "created_at": "2022-12-23T20:55:44.259Z",
+        "updated_at": "2022-12-31T00:38:43.939Z",
+        "nome": "OTODEM PLUS",
+        "descricao": "É uma solução otológica e dermatológica que combina diferentes princípios ativos...",
+        "preco": 35.99,
+        "imagem": "produtos/default.jpg"
+      }
+    },
+    {
+      "model": "venda.produto",
+      "pk": 103,
+      "fields": {
+        "created_at": "2022-12-23T20:55:44.259Z",
+        "updated_at": "2022-12-31T00:38:43.939Z",
+        "nome": "OXITAPE LA",
+        "descricao": "Descrição e indicações : Antimicrobiano de amplo espectro para uso em bovinos, e...",
+        "preco": 35.99,
+        "imagem": "produtos/default.jpg"
+      }
+    },
+    {
+      "model": "venda.produto",
+      "pk": 104,
+      "fields": {
+        "created_at": "2022-12-23T20:55:44.259Z",
+        "updated_at": "2022-12-31T00:38:43.939Z",
+        "nome": "PADOCK GEL",
+        "descricao": "Descrição e indicações : Vermífugo indicado para controle das verminoses em equi...",
+        "preco": 35.99,
+        "imagem": "produtos/default.jpg"
+      }
+    },
+    {
+      "model": "venda.produto",
+      "pk": 105,
+      "fields": {
+        "created_at": "2022-12-23T20:55:44.259Z",
+        "updated_at": "2022-12-31T00:38:43.939Z",
+        "nome": "PADOCK PLUS NF",
+        "descricao": "Descrição e indicações : Vermífugo de amplo espectro para controle das verminose...",
+        "preco": 35.99,
+        "imagem": "produtos/default.jpg"
+      }
+    },
+    {
+      "model": "venda.produto",
+      "pk": 106,
+      "fields": {
+        "created_at": "2022-12-23T20:55:44.259Z",
+        "updated_at": "2022-12-31T00:38:43.939Z",
+        "nome": "PAIN-OXX",
+        "descricao": "DESCRIÇÃO   Pain-Oxx é uma pasta oral à base de Firocoxibe, um anti-inflamatório...",
+        "preco": 35.99,
+        "imagem": "produtos/default.jpg"
+      }
+    },
+    {
+      "model": "venda.produto",
+      "pk": 107,
+      "fields": {
+        "created_at": "2022-12-23T20:55:44.259Z",
+        "updated_at": "2022-12-31T00:38:43.939Z",
+        "nome": "PARTOMICINA",
+        "descricao": "Descrição e indicações   A PARTOMICINA é indicada para o tratamento de retenções...",
+        "preco": 35.99,
+        "imagem": "produtos/default.jpg"
+      }
+    },
+    {
+      "model": "venda.produto",
+      "pk": 108,
+      "fields": {
+        "created_at": "2022-12-23T20:55:44.259Z",
+        "updated_at": "2022-12-31T00:38:43.939Z",
+        "nome": "PET AWAY",
+        "descricao": "Educador a base de Metil-Nonil-Cetona e Glicerina Bidestilada que mantém cães e...",
+        "preco": 35.99,
+        "imagem": "produtos/default.jpg"
+      }
+    },
+    {
+      "model": "venda.produto",
+      "pk": 109,
+      "fields": {
+        "created_at": "2022-12-23T20:55:44.259Z",
+        "updated_at": "2022-12-31T00:38:43.939Z",
+        "nome": "PETZI FILHOTES",
+        "descricao": "Vermífugo oral de amplo espectro para cães. Ideal para filhotes.   BULA: FISPQ:",
+        "preco": 35.99,
+        "imagem": "produtos/default.jpg"
+      }
+    },
+    {
+      "model": "venda.produto",
+      "pk": 110,
+      "fields": {
+        "created_at": "2022-12-23T20:55:44.259Z",
+        "updated_at": "2022-12-31T00:38:43.939Z",
+        "nome": "PETZI GATOS COMPRIMIDOS",
+        "descricao": "Vermífugo oral palatável de amplo espectro para gatos.   BULA: FISPQ:",
+        "preco": 35.99,
+        "imagem": "produtos/default.jpg"
+      }
+    },
+    {
+      "model": "venda.produto",
+      "pk": 111,
+      "fields": {
+        "created_at": "2022-12-23T20:55:44.259Z",
+        "updated_at": "2022-12-31T00:38:43.939Z",
+        "nome": "PETZI PLUS",
+        "descricao": "Vermífugo oral de amplo espectro para programas integrados de combate a verminos...",
+        "preco": 35.99,
+        "imagem": "produtos/default.jpg"
+      }
+    },
+    {
+      "model": "venda.produto",
+      "pk": 112,
+      "fields": {
+        "created_at": "2022-12-23T20:55:44.259Z",
+        "updated_at": "2022-12-31T00:38:43.939Z",
+        "nome": "POXIMUNE AE",
+        "descricao": "POXIMUNE AE é uma vacina viva liofilizada que contém Poxvírus e vírus da&nbsp;Encefal...",
+        "preco": 35.99,
+        "imagem": "produtos/default.jpg"
+      }
+    },
+    {
+      "model": "venda.produto",
+      "pk": 113,
+      "fields": {
+        "created_at": "2022-12-23T20:55:44.259Z",
+        "updated_at": "2022-12-31T00:38:43.939Z",
+        "nome": "PROCICLAR",
+        "descricao": "Descrição e indicações : Dispositivo intravaginal de progesterona indicado nos p...",
+        "preco": 35.99,
+        "imagem": "produtos/default.jpg"
+      }
+    },
+    {
+      "model": "venda.produto",
+      "pk": 114,
+      "fields": {
+        "created_at": "2022-12-23T20:55:44.259Z",
+        "updated_at": "2022-12-31T00:38:43.939Z",
+        "nome": "PROZYM M",
+        "descricao": "Sua textura e formato estimulam a mastigação por até 8 minutos, permitindo a efi...",
+        "preco": 35.99,
+        "imagem": "produtos/default.jpg"
+      }
+    },
+    {
+      "model": "venda.produto",
+      "pk": 115,
+      "fields": {
+        "created_at": "2022-12-23T20:55:44.259Z",
+        "updated_at": "2022-12-31T00:38:43.939Z",
+        "nome": "PROZYM S",
+        "descricao": "Sua textura e formato estimulam a mastigação por até 8 minutos, permitindo a efi...",
+        "preco": 35.99,
+        "imagem": "produtos/default.jpg"
+      }
+    },
+    {
+      "model": "venda.produto",
+      "pk": 116,
+      "fields": {
+        "created_at": "2022-12-23T20:55:44.259Z",
+        "updated_at": "2022-12-31T00:38:43.939Z",
+        "nome": "PURITEC GOLD",
+        "descricao": "Descrição e indicações : Endectocida injetável para bovinos, de fácil aplicação,...",
+        "preco": 35.99,
+        "imagem": "produtos/default.jpg"
+      }
+    },
+    {
+      "model": "venda.produto",
+      "pk": 117,
+      "fields": {
+        "created_at": "2022-12-23T20:55:44.259Z",
+        "updated_at": "2022-12-31T00:38:43.939Z",
+        "nome": "RABMUNE",
+        "descricao": "Descrição e indicações : Vacina para prevenção da raiva dos bovinos, equinos, ov...",
+        "preco": 35.99,
+        "imagem": "produtos/default.jpg"
+      }
+    },
+    {
+      "model": "venda.produto",
+      "pk": 118,
+      "fields": {
+        "created_at": "2022-12-23T20:55:44.259Z",
+        "updated_at": "2022-12-31T00:38:43.939Z",
+        "nome": "RABMUNE",
+        "descricao": "Vacina Inativada Liofilizada Contra Raiva, para prevenção em cães e gatos.   Ins...",
+        "preco": 35.99,
+        "imagem": "produtos/default.jpg"
+      }
+    },
+    {
+      "model": "venda.produto",
+      "pk": 119,
+      "fields": {
+        "created_at": "2022-12-23T20:55:44.259Z",
+        "updated_at": "2022-12-31T00:38:43.939Z",
+        "nome": "RACTOP 2% e 10%",
+        "descricao": "Agonista B-adrenérgico que age no metabolismo do animal inibindo lipogênese, aum...",
+        "preco": 35.99,
+        "imagem": "produtos/default.jpg"
+      }
+    },
+    {
+      "model": "venda.produto",
+      "pk": 120,
+      "fields": {
+        "created_at": "2022-12-23T20:55:44.259Z",
+        "updated_at": "2022-12-31T00:38:43.939Z",
+        "nome": "Retardoesteróide",
+        "descricao": "Descrição e indicações : Anti-inflamatório esteroidal indicado para bovinos e eq...",
+        "preco": 35.99,
+        "imagem": "produtos/default.jpg"
+      }
+    },
+    {
+      "model": "venda.produto",
+      "pk": 121,
+      "fields": {
+        "created_at": "2022-12-23T20:55:44.259Z",
+        "updated_at": "2022-12-31T00:38:43.939Z",
+        "nome": "ROBOFORTE",
+        "descricao": "Descrição e indicações : Tônico revigorante com formulação exclusiva de alto val...",
+        "preco": 35.99,
+        "imagem": "produtos/default.jpg"
+      }
+    },
+    {
+      "model": "venda.produto",
+      "pk": 122,
+      "fields": {
+        "created_at": "2022-12-23T20:55:44.259Z",
+        "updated_at": "2022-12-31T00:38:43.939Z",
+        "nome": "THIAMVET",
+        "descricao": "THIAMVET 50% PS é um composto antimicrobiano à base de Tianfenicol apresentado n...",
+        "preco": 35.99,
+        "imagem": "produtos/default.jpg"
+      }
+    },
+    {
+      "model": "venda.produto",
+      "pk": 123,
+      "fields": {
+        "created_at": "2022-12-23T20:55:44.259Z",
+        "updated_at": "2022-12-31T00:38:43.939Z",
+        "nome": "TICSON 3.50",
+        "descricao": "Descrição e indicações : Endectocida tixotrópico concentrado para uso em bovinos...",
+        "preco": 35.99,
+        "imagem": "produtos/default.jpg"
+      }
+    },
+    {
+      "model": "venda.produto",
+      "pk": 124,
+      "fields": {
+        "created_at": "2022-12-23T20:55:44.259Z",
+        "updated_at": "2022-12-31T00:38:43.939Z",
+        "nome": "TICSON CLASSIC",
+        "descricao": "Descrição e indicações : Endectocida injetável para uso nos bovinos quando se pr...",
+        "preco": 35.99,
+        "imagem": "produtos/default.jpg"
+      }
+    },
+    {
+      "model": "venda.produto",
+      "pk": 125,
+      "fields": {
+        "created_at": "2022-12-23T20:55:44.259Z",
+        "updated_at": "2022-12-31T00:38:43.939Z",
+        "nome": "TIFOPASTEURINA",
+        "descricao": "Descrição e indicações : Vacina indicada para a prevenção da Pasteurelose Bovina...",
+        "preco": 35.99,
+        "imagem": "produtos/default.jpg"
+      }
+    },
+    {
+      "model": "venda.produto",
+      "pk": 126,
+      "fields": {
+        "created_at": "2022-12-23T20:55:44.259Z",
+        "updated_at": "2022-12-31T00:38:43.939Z",
+        "nome": "TILDREN",
+        "descricao": "Terapêutico de uso exclusivo em equinos recomendado para o tratamento das claudi...",
+        "preco": 35.99,
+        "imagem": "produtos/default.jpg"
+      }
+    },
+    {
+      "model": "venda.produto",
+      "pk": 127,
+      "fields": {
+        "created_at": "2022-12-23T20:55:44.259Z",
+        "updated_at": "2022-12-31T00:38:43.939Z",
+        "nome": "TILMICOVET",
+        "descricao": "Descrição e indicações : Antimicrobiano indicado para tratamento das infecções r...",
+        "preco": 35.99,
+        "imagem": "produtos/default.jpg"
+      }
+    },
+    {
+      "model": "venda.produto",
+      "pk": 128,
+      "fields": {
+        "created_at": "2022-12-23T20:55:44.259Z",
+        "updated_at": "2022-12-31T00:38:43.939Z",
+        "nome": "TRI-EQUI",
+        "descricao": "Descrição e indicações : Vacina tríplice recomendada para equinos sadios na prev...",
+        "preco": 35.99,
+        "imagem": "produtos/default.jpg"
+      }
+    },
+    {
+      "model": "venda.produto",
+      "pk": 129,
+      "fields": {
+        "created_at": "2022-12-23T20:55:44.259Z",
+        "updated_at": "2022-12-31T00:38:43.939Z",
+        "nome": "TYLADEN",
+        "descricao": "Descrição e indicações : Antimicrobiano para uso em bovinos, suínos e caprinos....",
+        "preco": 35.99,
+        "imagem": "produtos/default.jpg"
+      }
+    },
+    {
+      "model": "venda.produto",
+      "pk": 130,
+      "fields": {
+        "created_at": "2022-12-23T20:55:44.259Z",
+        "updated_at": "2022-12-31T00:38:43.939Z",
+        "nome": "VACINA CONTRA GARROTILH...",
+        "descricao": "Descrição e indicações : Vacina produzida para prevenção da Adenite Equina ou ta...",
+        "preco": 35.99,
+        "imagem": "produtos/default.jpg"
+      }
+    },
+    {
+      "model": "venda.produto",
+      "pk": 131,
+      "fields": {
+        "created_at": "2022-12-23T20:55:44.259Z",
+        "updated_at": "2022-12-31T00:38:43.939Z",
+        "nome": "VECTORMUNE  FP LT",
+        "descricao": "Descrição   VECTORMUNE® FP-LT é uma vacina viva com vírus geneticamente modifica...",
+        "preco": 35.99,
+        "imagem": "produtos/default.jpg"
+      }
+    },
+    {
+      "model": "venda.produto",
+      "pk": 132,
+      "fields": {
+        "created_at": "2022-12-23T20:55:44.259Z",
+        "updated_at": "2022-12-31T00:38:43.939Z",
+        "nome": "VECTORMUNE FP MG",
+        "descricao": "VECTORMUNE FP MG é uma vacina viva liofilizada que contém Poxvírus&nbsp;geneticamente...",
+        "preco": 35.99,
+        "imagem": "produtos/default.jpg"
+      }
+    },
+    {
+      "model": "venda.produto",
+      "pk": 133,
+      "fields": {
+        "created_at": "2022-12-23T20:55:44.259Z",
+        "updated_at": "2022-12-31T00:38:43.939Z",
+        "nome": "VECTORMUNE FP MG AE",
+        "descricao": "É uma vacina viva liofilizada que contém o vírus&nbsp;Poxvírus de galinha geneticamen...",
+        "preco": 35.99,
+        "imagem": "produtos/default.jpg"
+      }
+    },
+    {
+      "model": "venda.produto",
+      "pk": 134,
+      "fields": {
+        "created_at": "2022-12-23T20:55:44.259Z",
+        "updated_at": "2022-12-31T00:38:43.939Z",
+        "nome": "VECTORMUNE HVT LT",
+        "descricao": "VECTORMUNE HVT LT é uma vacina viva congelada que contém o vírus da&nbsp;doença de Ma...",
+        "preco": 35.99,
+        "imagem": "produtos/default.jpg"
+      }
+    },
+    {
+      "model": "venda.produto",
+      "pk": 135,
+      "fields": {
+        "created_at": "2022-12-23T20:55:44.259Z",
+        "updated_at": "2022-12-31T00:38:43.939Z",
+        "nome": "VECTORMUNE ND",
+        "descricao": "VECTORMUNE ND é uma vacina que contém o vírus da doença de&nbsp;Marek HVT (Sorotipo 3...",
+        "preco": 35.99,
+        "imagem": "produtos/default.jpg"
+      }
+    },
+    {
+      "model": "venda.produto",
+      "pk": 136,
+      "fields": {
+        "created_at": "2022-12-23T20:55:44.259Z",
+        "updated_at": "2022-12-31T00:38:43.939Z",
+        "nome": "VECTRA 3D",
+        "descricao": "Proteção tópica super premium contra pulgas (adultas e imaturas), carrapatos, fl...",
+        "preco": 35.99,
+        "imagem": "produtos/default.jpg"
+      }
+    },
+    {
+      "model": "venda.produto",
+      "pk": 137,
+      "fields": {
+        "created_at": "2022-12-23T20:55:44.259Z",
+        "updated_at": "2022-12-31T00:38:43.939Z",
+        "nome": "VECTRA GATOS",
+        "descricao": "Produto tópico a base dinotefuran e piriproxifen para combate e controle de pulg...",
+        "preco": 35.99,
+        "imagem": "produtos/default.jpg"
+      }
+    },
+    {
+      "model": "venda.produto",
+      "pk": 138,
+      "fields": {
+        "created_at": "2022-12-23T20:55:44.259Z",
+        "updated_at": "2022-12-31T00:38:43.939Z",
+        "nome": "VELACTIS",
+        "descricao": "Descrição e indicações : Exclusivo facilitador de secagem para vacas leiteiras d...",
+        "preco": 35.99,
+        "imagem": "produtos/default.jpg"
+      }
+    },
+    {
+      "model": "venda.produto",
+      "pk": 139,
+      "fields": {
+        "created_at": "2022-12-23T20:55:44.259Z",
+        "updated_at": "2022-12-31T00:38:43.939Z",
+        "nome": "VETRIMOXIN ADVANCE",
+        "descricao": "Prevenção e tratamento de infecções respiratórias causadas&nbsp;por bactérias sensíve...",
+        "preco": 35.99,
+        "imagem": "produtos/default.jpg"
+      }
+    },
+    {
+      "model": "venda.produto",
+      "pk": 140,
+      "fields": {
+        "created_at": "2022-12-23T20:55:44.259Z",
+        "updated_at": "2022-12-31T00:38:43.939Z",
+        "nome": "VIVAZENE",
+        "descricao": "Descrição e indicações : Terapêutico contra babesiose dos bovinos, equinos e ovi...",
+        "preco": 35.99,
+        "imagem": "produtos/default.jpg"
+      }
+    },
+    {
+      "model": "venda.produto",
+      "pk": 141,
+      "fields": {
+        "created_at": "2022-12-23T20:55:44.259Z",
+        "updated_at": "2022-12-31T00:38:43.939Z",
+        "nome": "VIVEDIUM",
+        "descricao": "Descrição e indicações : Tripanocida específico de alta eficácia e alta persistê...",
+        "preco": 35.99,
+        "imagem": "produtos/default.jpg"
+      }
+    },
+    {
+      "model": "venda.produto",
+      "pk": 142,
+      "fields": {
+        "created_at": "2022-12-23T20:55:44.259Z",
+        "updated_at": "2022-12-31T00:38:43.939Z",
+        "nome": "ZELERIS",
+        "descricao": "Descrição: Inovadora associação de Florfenicol + Meloxicam indicado para o trata...",
+        "preco": 35.99,
+        "imagem": "produtos/default.jpg"
+      }
+    }
+  ]
