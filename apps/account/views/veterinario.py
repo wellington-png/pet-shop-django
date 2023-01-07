@@ -51,8 +51,8 @@ class VeterinarioListView(LoginRequiredMixin, ListView):
     model = Veterinario
     template_name ='veterinario/list.html'
     login_url = reverse_lazy('account_veterinario_login')
-    success_url = reverse_lazy('apps:account:list')
-    title = 'Vetorinários'
+    context_object_name = 'veterinarios'
+    
     
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)

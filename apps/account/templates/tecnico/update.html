@@ -7,7 +7,7 @@
     <div class="card">
       <div class="card-body">
         <h4 class="card-title">Cadastro de tecnico</h4>
-        <form class="forms-sample" method="post" action="{% url 'apps:account:tecnico_create' %}" enctype="multipart/form-data">
+        <form class="forms-sample" method="post" action="{% url 'apps:account:tecnico_update' object.id %}" enctype="multipart/form-data">
             <div class="form-group">
             {% csrf_token %}
             {{form}} <!-- form de compra -->

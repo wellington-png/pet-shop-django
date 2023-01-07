@@ -111,8 +111,8 @@
       </a>
       <div class="collapse" id="aten">
         <ul class="nav flex-column sub-menu">
-          <li class="nav-item"> <a class="nav-link" href="pages/samples/login.html"> Cadastrar  </a></li>
-          <li class="nav-item"> <a class="nav-link" href="pages/samples/login.html"> Login </a></li>
+          <li class="nav-item"> <a class="nav-link" href="{% url 'apps:account:atendente_create' %}"> Cadastrar</a></li>
+          <li class="nav-item"> <a class="nav-link" href="{% url 'apps:account:atendente_list' %}"> Listar </a></li>
         </ul>
       </div>
     </li>
@@ -123,20 +123,20 @@
       </a>
       <div class="collapse" id="tec">
         <ul class="nav flex-column sub-menu">
-          <li class="nav-item"> <a class="nav-link" href="pages/samples/login.html"> Cadastrar  </a></li>
-          <li class="nav-item"> <a class="nav-link" href="pages/samples/login.html"> Login </a></li>
+          <li class="nav-item"> <a class="nav-link" href="{% url 'apps:account:tecnico_create' %}"> Cadastrar  </a></li>
+          <li class="nav-item"> <a class="nav-link" href="{% url 'apps:account:tecnico_list' %}"> Listar </a></li>
         </ul>
       </div>
     </li>
     <li class="nav-item">
       <a class="nav-link" data-bs-toggle="collapse" href="#auth" aria-expanded="false" aria-controls="auth">
-        <span class="menu-title">Usuarios</span>
+        <span class="menu-title">Veterinario</span>
         <i class="menu-arrow"></i>
       </a>
       <div class="collapse" id="auth">
         <ul class="nav flex-column sub-menu">
-          <li class="nav-item"> <a class="nav-link" href="pages/samples/login.html"> Cadastrar  </a></li>
-          <li class="nav-item"> <a class="nav-link" href="pages/samples/login.html"> Login </a></li>
+          <li class="nav-item"> <a class="nav-link" href="{% url 'apps:account:veterinario_create' %}"> Cadastrar  </a></li>
+          <li class="nav-item"> <a class="nav-link" href="{% url 'apps:account:veterinario_list' %}"> Listar </a></li>
         </ul>
       </div>
     </li>

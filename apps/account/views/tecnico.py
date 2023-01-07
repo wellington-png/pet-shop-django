@@ -49,6 +49,8 @@ class TecnicoListView(LoginRequiredMixin, ListView):
     model = Tecnico
     template_name = 'tecnico/list.html'
     login_url = reverse_lazy('account_tecnico_login')
+    context_object_name = 'tecnicos'
+    
     
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
