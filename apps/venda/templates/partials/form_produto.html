@@ -1,13 +1,14 @@
   <div class="col-md-12 grid-margin stretch-card ">
       <div class="card">
         <div class="card-body">
-          <h4 class="card-title">Cadastro de compra</h4>
+          <h4 class="card-title">Cadastro de produtos</h4>
           <form class="forms-sample" method="post" action="{% url 'apps:venda:produto_create' %}" enctype="multipart/form-data">
               <div class="form-group">
               {% csrf_token %}
               {{form}} <!-- form de compra -->
-              <button type="submit" class="btn btn-primary mr-2">Cadastrar</button>
-          </div>
+            </div>
+            <button type="submit" class="btn btn-primary mr-2 btn-block">Cadastrar</button>
+
           </form>
         </div>
       </div>

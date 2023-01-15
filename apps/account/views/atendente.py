@@ -8,7 +8,7 @@ from django.urls import reverse_lazy
 class AtendenteListView(LoginRequiredMixin, ListView):
     model = Atendente
     template_name = 'atendente/list.html'
-    login_url = reverse_lazy('account_atendente_login')
+    login_url = reverse_lazy('apps:core:home')
     context_object_name = 'atendentes'
     
     def get_context_data(self, **kwargs):
@@ -20,8 +20,8 @@ class AtendenteCreateView(LoginRequiredMixin, CreateView):
      model = Atendente
      form_class = AtendenteForm
      template_name = 'atendente/create.html'
-     login_url = reverse_lazy('account_atendente_login')
-     success_url = reverse_lazy('apps:core:home')
+     login_url = reverse_lazy('apps:core:home')
+     success_url = reverse_lazy('apps:account:atendente_list')
      
      
      def get_context_data(self, **kwargs):
@@ -33,9 +33,9 @@ class AtendenteCreateView(LoginRequiredMixin, CreateView):
 class AtendenteUpdateView(LoginRequiredMixin, UpdateView):
      model = Atendente
      form_class = AtendenteForm
-     template_name = 'atendente/form.html'
-     login_url = reverse_lazy('account_atendente_login')
-     success_url = reverse_lazy('atendente:atendente_list')
+     template_name = 'atendente/update.html'
+     login_url = reverse_lazy('apps:core:home')
+     success_url = reverse_lazy('apps:account:atendente_list')
      
      
      def get_context_data(self, **kwargs):
@@ -47,8 +47,8 @@ class AtendenteUpdateView(LoginRequiredMixin, UpdateView):
 class AtendenteDeleteView(LoginRequiredMixin, DeleteView):
     model = Atendente
     template_name = 'atendente/delete.html'
-    login_url = reverse_lazy('account_atendente_login')
-    success_url = reverse_lazy('atendente:atendente_list')
+    login_url = reverse_lazy('apps:core:home')
+    success_url = reverse_lazy('apps:account:atendente_list')
     
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)

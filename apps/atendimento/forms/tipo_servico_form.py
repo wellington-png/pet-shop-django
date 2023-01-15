@@ -13,7 +13,7 @@ class TipoForm(ModelForm):
         self.fields['descricao'].widget.attrs['placeholder'] = 'Descrição'
         self.fields['descricao'].label = ''
         self.fields['descricao'].help_text = ''
-        self.fields['preco'].widget.attrs['class'] = 'form-control'
+        self.fields['preco'].widget.attrs['class'] = 'form-control mt-2 mb-2'
         self.fields['preco'].widget.attrs['placeholder'] = 'Preço'
         self.fields['preco'].label = ''
         self.fields['preco'].help_text = ''

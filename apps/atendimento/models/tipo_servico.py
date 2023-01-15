@@ -9,6 +9,7 @@ class TipoServico(BaseModel):
     class Meta:
         verbose_name = 'Tipo de Serviço'
         verbose_name_plural = 'Tipos de Serviços'
+        ordering = ["-id"]
 
     def __str__(self):
         return self.descricao

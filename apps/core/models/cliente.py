@@ -47,3 +47,4 @@ class Cliente(BaseModel):
     class Meta:
         verbose_name = 'Cliente'
         verbose_name_plural = 'Clientes'
+        ordering = ['-id']

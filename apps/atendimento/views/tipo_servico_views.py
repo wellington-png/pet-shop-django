@@ -14,13 +14,14 @@ class TipoServicoListView(LoginRequiredMixin, ListView):
     context_object_name = 'tipos'
     paginate_by = 10
 
+
     def get_context_data(self, **kwargs):
         context = super(TipoServicoListView, self).get_context_data(**kwargs)
         context['title'] = 'Lista de Tipos de Serviço'
         return context
     
     def get_queryset(self):
-        return TipoServico.objects.all().order_by('descricao')
+        return TipoServico.objects.all().order_by('-id')
 
 
 class TipoServicoCreateView(LoginRequiredMixin, CreateView):

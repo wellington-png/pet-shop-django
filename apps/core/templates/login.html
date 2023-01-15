@@ -1,6 +1,6 @@
 {% load static %}
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
     {% include 'partials/head.html' %}
 
@@ -11,8 +11,8 @@
         <div class="row w-100 mx-0">
           <div class="col-lg-4 mx-auto">
             <div class="auth-form-light text-left py-5 px-4 px-sm-5">
-              <h4>Hello! let's get started</h4>
-              <h6 class="fw-light">Sign in to continue.</h6>
+              <h4>Olá! vamos começar</h4>
+              <h6 class="fw-light">Faça login para continuar.</h6>
               <form class="pt-3" action="{% url 'apps:core:login'  %}" method="POST">
                 {% csrf_token %}
                 <div class="form-group">

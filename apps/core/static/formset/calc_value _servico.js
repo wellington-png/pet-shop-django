@@ -8,7 +8,7 @@ function calcularValor() {
         servico.addEventListener('change', () => {
             if (input_quant[index].value > 0) {
                 $.ajax({
-                    url: `http://wellingtondev.ninja/servico/get_value/${input_servico[index].value}/`,
+                    url: `http://127.0.0.1:8000/servico/get_value/${input_servico[index].value}/`,
                     type: "GET",
                     dataType: "json",
                     success: (data) => {
@@ -30,7 +30,7 @@ function calcularValor() {
             const valor = quant.value;
             if (valor > 0) {
                 $.ajax({
-                    url: `http://wellingtondev.ninja/servico/get_value/${input_servico[index].value}/`,
+                    url: `http://127.0.0.1:8000/servico/get_value/${input_servico[index].value}/`,
                     type: "GET",
                     dataType: "json",
                     success: (data) => {

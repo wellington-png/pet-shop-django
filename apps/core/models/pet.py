@@ -18,6 +18,7 @@ class Pet(BaseModel):
     class Meta:
         verbose_name = 'Pet'
         verbose_name_plural = 'Pets'
+        ordering = ["-id"]
 
     def __str__(self):
         return self.nome

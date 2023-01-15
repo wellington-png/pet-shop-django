@@ -3,30 +3,40 @@
 {%block content%}
 <div class="row">
     <div class="col-sm-12">
-        <div class="statistics-details d-flex align-items-center justify-content-between">
-            <div>
-                <p class="statistics-title">valor em vendas</p>
-                <h3 class="rate-percentage">R${{valor_compras}}</h3>
-                <p class="text-success d-flex">quantidade: <span> {{quant_compra}}</span></p>
-            </div>
-            <div>
-                <p class="statistics-title">valor em serviços</p>
-                <h3 class="rate-percentage">R$</h3>
-                <p class="text-success d-flex">QUANT<span>: 157</span></p>
-            </div>
-            <div>
-                <p class="statistics-title">valor em consultas</p>
-                <h3 class="rate-percentage">R$</h3>
-                <p class="text-success d-flex">QUANT<span>: 157</span></p>
-            </div>
-            <div>
-                <p class="statistics-title">valor total</p>
-                <h3 class="rate-percentage">R$</h3>
-                <p class="text-success d-flex">QUANT <span>: 157</span></p>
-            </div>
+      <div class="statistics-details d-flex align-items-center justify-content-between">
+        <div>
+          <p class="statistics-title">Consultas do mês</p>
+          <h3 class="rate-percentage">R${{valor_consultas_mes}}</h3>
+          <p class="text-danger d-flex"><i class="mdi mdi-menu-down"></i><span>-{{count_consultas_mes}}</span></p>
         </div>
+        <div>
+          <p class="statistics-title">Consultas da semana</p>
+          <h3 class="rate-percentage">R${{valor_consultas_semana}}</h3>
+          <p class="text-success d-flex"><i class="mdi mdi-menu-up"></i><span>+{{count_consultas_semana}}</span></p>
+        </div>
+        <div>
+          <p class="statistics-title">Serviços do mês</p>
+          <h3 class="rate-percentage">R${{valor_servicos_mes}}</h3>
+          <p class="text-danger d-flex"><i class="mdi mdi-menu-down"></i><span>{{count_servicos_mes}}</span></p>
+        </div>
+        <div class="d-none d-md-block">
+          <p class="statistics-title">Serviços da semana</p>
+          <h3 class="rate-percentage">R${{valor_servicos_semana}}</h3>
+          <p class="text-success d-flex"><i class="mdi mdi-menu-down"></i><span>+{{count_servicos_semana}}</span></p>
+        </div>
+        <div class="d-none d-md-block">
+          <p class="statistics-title">Vendas do mês</p>
+          <h3 class="rate-percentage">R${{valor_compras_mes}}</h3>
+          <p class="text-danger d-flex"><i class="mdi mdi-menu-down"></i><span>{{count_compras_mes}}</span></p>
+        </div>
+        <div class="d-none d-md-block">
+          <p class="statistics-title">Vendas da semana</p>
+          <h3 class="rate-percentage">R${{valor_compras_semana}}</h3>
+          <p class="text-success d-flex"><i class="mdi mdi-menu-down"></i><span>{{count_compras_semana}}</span></p>
+        </div>
+      </div>
     </div>
-</div>
+  </div>
 <div class="row flex-grow">
     <div class="col-md-4 col-lg-4 grid-margin stretch-card">
         <div class="card card-rounded">

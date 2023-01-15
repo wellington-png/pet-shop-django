@@ -99,7 +99,6 @@ def create_data():
         Compra.objects.create(
             cliente_id=fake.pyint(1, 10),
             atendente=Atendente.objects.first(),
-            valor_total=50.10,
             data_compra=datetime.now().date(),
         )
 
@@ -116,7 +115,6 @@ def create_data():
             pet_id=fake.pyint(1, 10),
             tecnico=Tecnico.objects.first(),
             data_servico=datetime.now().date(),
-            valor_total=50.10,
         )
 
 
@@ -128,7 +126,6 @@ def create_data():
             diagnostico=fake.text(),
             tratamento=fake.text(),
             data_consulta=datetime.now().date(),
-            valor_total=50.10,
         )
     
     for i in range(10):

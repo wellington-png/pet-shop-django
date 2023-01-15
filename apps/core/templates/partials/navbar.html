@@ -11,7 +11,7 @@
         <a class="navbar-brand brand-logo" href="{% url 'apps:core:home' %}">
           <h2>PET SHOP</h2>
         </a>
-        <a class="navbar-brand brand-logo-mini" href="index.html">
+        <a class="navbar-brand brand-logo-mini" href="{% url 'apps:core:home' %}">
           <img src="{% static 'images/logo-mini.svg' %}" alt="logo" />
         </a>
       </div>
@@ -28,14 +28,10 @@
             <img class="img-xs rounded-circle" src="{% static 'images/faces/face8.jpg' %}" alt="Profile image"> </a>
           <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="UserDropdown">
             <div class="dropdown-header text-center">
-              <img class="img-md rounded-circle" src="{% static 'images/faces/face8.jpg' %}" alt="Profile image">
-              <p class="mb-1 mt-3 font-weight-semibold">Allen Moreno</p>
-              <p class="fw-light text-muted mb-0">allenmoreno@gmail.com</p>
+              <img class="img-md rounded-circle" src="{% static 'images/faces/face8.jpg' %}" width="50px" alt="Profile image">
+              <p class="mb-1 mt-3 font-weight-semibold">{{user.name}}</p>
+              <p class="fw-light text-muted mb-0">{{user.email}}</p>
             </div>
-            <a class="dropdown-item"><i class="dropdown-item-icon mdi mdi-account-outline text-primary me-2"></i> My Profile <span class="badge badge-pill badge-danger">1</span></a>
-            <a class="dropdown-item"><i class="dropdown-item-icon mdi mdi-message-text-outline text-primary me-2"></i> Messages</a>
-            <a class="dropdown-item"><i class="dropdown-item-icon mdi mdi-calendar-check-outline text-primary me-2"></i> Activity</a>
-            <a class="dropdown-item"><i class="dropdown-item-icon mdi mdi-help-circle-outline text-primary me-2"></i> FAQ</a>
             <a class="dropdown-item" href="{% url 'apps:core:logout' %}" ><i class="dropdown-item-icon mdi mdi-power text-primary me-2"></i>Sign Out</a>
           </div>
         </li>

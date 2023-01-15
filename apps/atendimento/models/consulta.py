@@ -1,5 +1,6 @@
 from django.db.models import ForeignKey, TextField, CASCADE, DateField, DecimalField
 from apps.core.models import BaseModel
+from django.db.models import Sum
 
 
 class Consulta(BaseModel):
@@ -18,3 +19,9 @@ class Consulta(BaseModel):
 
     def __str__(self):
         return self.pet.nome
+
+    @property
+    def valor_consulta(self):
+        print(dir(self))
+        return self.itemconsulta_set.all().aggregate(valor_total=Sum('valor_item'))['valor_total'] + self.valor_total
+

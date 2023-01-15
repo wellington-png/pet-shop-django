@@ -59,7 +59,7 @@ class Funcionario(AbstractBaseUser, PermissionsMixin, BaseModel):
     class Meta:
         verbose_name = "usuário"
         verbose_name_plural = "usuários"
-        ordering = ["name", "created_at"]
+        ordering = ["-id"]
      
     def __str__(self):
         return self.username
