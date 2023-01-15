@@ -1,12 +1,19 @@
 from apps.core.models import Cliente, Pet
 from apps.account.models import Atendente, Tecnico, Veterinario
 from apps.venda.models import Compra, ItemCompra, Produto, Estoque
-from apps.atendimento.models import Servico, TipoServico, Consulta, ItemConsulta, ItemServico
+from apps.atendimento.models import (
+    Servico,
+    TipoServico,
+    Consulta,
+    ItemConsulta,
+    ItemServico,
+)
 from datetime import datetime
 
 from faker import Faker
 
-fake = Faker('pt_BR')
+fake = Faker("pt_BR")
+
 
 def create_data():
     for i in range(10):
@@ -46,7 +53,7 @@ def create_data():
             salario=fake.pydecimal(left_digits=5, right_digits=2, positive=True),
             cra=fake.pydecimal(left_digits=5, right_digits=2, positive=True),
         )
-# from apps.core.commands.create_data import create_data
+    # from apps.core.commands.create_data import create_data
     for i in range(10):
         Tecnico.objects.create(
             name=fake.name(),
@@ -67,7 +74,7 @@ def create_data():
             name=fake.name(),
             email=fake.email(),
             username=fake.user_name(),
-            cpf=f'{fake.cpf()}',
+            cpf=f"{fake.cpf()}",
             logradouro=fake.street_name(),
             cidade=fake.city(),
             uf=fake.state(),
@@ -76,25 +83,25 @@ def create_data():
             salario=fake.pydecimal(left_digits=5, right_digits=2, positive=True),
             crmv=fake.pydecimal(left_digits=5, right_digits=2, positive=True),
         )
- 
+
     for i in range(10):
         Produto.objects.create(
             nome=fake.name(),
             descricao=fake.name(),
             preco=52.0,
         )
- 
+
     for i in range(10):
         Estoque.objects.create(
             produto=Produto.objects.first(),
             quantidade=fake.pyint(),
-        )   
-    
+        )
+
     for i in range(10):
         TipoServico.objects.create(
             descricao=fake.text(),
             preco=50.10,
-        )    
+        )
     for i in range(10):
         Compra.objects.create(
             cliente_id=fake.pyint(1, 10),
@@ -106,9 +113,8 @@ def create_data():
         ItemCompra.objects.create(
             compra_id=fake.pyint(1, 10),
             produto_id=fake.pyint(1, 10),
-            quantidade=fake.pyint()
+            quantidade=fake.pyint(),
         )
-
 
     for i in range(10):
         Servico.objects.create(
@@ -116,7 +122,6 @@ def create_data():
             tecnico=Tecnico.objects.first(),
             data_servico=datetime.now().date(),
         )
-
 
     for i in range(10):
         Consulta.objects.create(
@@ -127,14 +132,14 @@ def create_data():
             tratamento=fake.text(),
             data_consulta=datetime.now().date(),
         )
-    
+
     for i in range(10):
         ItemConsulta.objects.create(
             consulta_id=fake.pyint(1, 10),
             tipo_servico_id=fake.pyint(1, 10),
             quantidade=fake.pyint(),
         )
-    
+
     for i in range(10):
         ItemServico.objects.create(
             servico_id=fake.pyint(1, 10),
@@ -142,5 +147,6 @@ def create_data():
             quantidade=fake.pyint(),
         )
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     create_data()

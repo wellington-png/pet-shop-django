@@ -3,4 +3,4 @@ from apps.core.models.cliente import Cliente
 from apps.core.models.pet import Pet
 
 
-__all__ = ['BaseModel', 'Cliente', 'Pet']
+__all__ = ["BaseModel", "Cliente", "Pet"]

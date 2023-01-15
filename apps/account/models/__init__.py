@@ -4,4 +4,4 @@ from apps.account.models.tecnico import Tecnico
 from apps.account.models.veterinario import Veterinario
 
 
-__all__ = ['Funcionario', 'Atendente', 'Tecnico', 'Veterinario']
+__all__ = ["Funcionario", "Atendente", "Tecnico", "Veterinario"]

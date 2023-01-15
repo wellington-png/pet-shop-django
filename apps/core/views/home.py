@@ -43,14 +43,46 @@ class HomeView(LoginRequiredMixin, TemplateView):
             created_at__range=[start_week, end_week]
         ).count()
 
-        context["valor_servicos_mes"] = sum([servico.valor_servico for servico in Servico.objects.filter(created_at__month=now().month)])
-        context["count_servicos_mes"] = Servico.objects.filter(created_at__month=now().month).count()
-        context["valor_servicos_semana"] = sum([servico.valor_servico for servico in Servico.objects.filter(created_at__range=[start_week, end_week])])
-        context["count_servicos_semana"] = Servico.objects.filter(created_at__range=[start_week, end_week]).count()
-        context["valor_consultas_mes"] = sum([consulta.valor_consulta for consulta in Consulta.objects.filter(created_at__month=now().month)])
-        context["count_consultas_mes"] = Consulta.objects.filter(created_at__month=now().month).count()
-        context["valor_consultas_semana"] = sum([consulta.valor_consulta for consulta in Consulta.objects.filter(created_at__range=[start_week, end_week])])
-        context["count_consultas_semana"] = Consulta.objects.filter(created_at__range=[start_week, end_week]).count()
+        context["valor_servicos_mes"] = sum(
+            [
+                servico.valor_servico
+                for servico in Servico.objects.filter(created_at__month=now().month)
+            ]
+        )
+        context["count_servicos_mes"] = Servico.objects.filter(
+            created_at__month=now().month
+        ).count()
+        context["valor_servicos_semana"] = sum(
+            [
+                servico.valor_servico
+                for servico in Servico.objects.filter(
+                    created_at__range=[start_week, end_week]
+                )
+            ]
+        )
+        context["count_servicos_semana"] = Servico.objects.filter(
+            created_at__range=[start_week, end_week]
+        ).count()
+        context["valor_consultas_mes"] = sum(
+            [
+                consulta.valor_consulta
+                for consulta in Consulta.objects.filter(created_at__month=now().month)
+            ]
+        )
+        context["count_consultas_mes"] = Consulta.objects.filter(
+            created_at__month=now().month
+        ).count()
+        context["valor_consultas_semana"] = sum(
+            [
+                consulta.valor_consulta
+                for consulta in Consulta.objects.filter(
+                    created_at__range=[start_week, end_week]
+                )
+            ]
+        )
+        context["count_consultas_semana"] = Consulta.objects.filter(
+            created_at__range=[start_week, end_week]
+        ).count()
 
         # List of objects
         context["list_vendas"] = Compra.objects.all().order_by("-id")[:7]
@@ -59,15 +91,18 @@ class HomeView(LoginRequiredMixin, TemplateView):
 
         return context
 
+
 def value_week(request):
     date = now().date()
     start_week = date - datetime.timedelta(date.weekday())
     lista_consulta = []
-    print('CHAMOUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU')
+    print("CHAMOUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU")
     lista_servico = []
     for i in range(7):
         date = start_week + datetime.timedelta(i)
         lista_consulta.append(Consulta.objects.filter(created_at__date=date).count())
         lista_servico.append(Servico.objects.filter(created_at__date=date).count())
-    
-    return JsonResponse({"lista_consulta": lista_consulta, "lista_servico": lista_servico})
+
+    return JsonResponse(
+        {"lista_consulta": lista_consulta, "lista_servico": lista_servico}
+    )

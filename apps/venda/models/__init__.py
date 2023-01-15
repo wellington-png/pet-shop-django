@@ -4,4 +4,4 @@ from apps.venda.models.produto import Produto
 from apps.venda.models.compra import Compra
 
 
-__all__ = ['Estoque', 'ItemCompra', 'Produto', 'Compra']
+__all__ = ["Estoque", "ItemCompra", "Produto", "Compra"]

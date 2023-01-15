@@ -1,23 +1,25 @@
-from django.contrib.auth.models import AbstractBaseUser, PermissionsMixin, BaseUserManager
+from django.contrib.auth.models import (
+    AbstractBaseUser,
+    PermissionsMixin,
+    BaseUserManager,
+)
 from django.db.models import CharField, EmailField, BooleanField, DecimalField
 
 from apps.core.models import BaseModel
 
+
 class UserManager(BaseUserManager):
     def create_user(self, username, name, email, password=None):
         if not username:
-            raise ValueError('O usuário precisa de um email')
+            raise ValueError("O usuário precisa de um email")
 
         user = self.model(
-            username=username,
-            email=self.normalize_email(email),
-            name=name
+            username=username, email=self.normalize_email(email), name=name
         )
 
         user.set_password(password)
         user.save(using=self._db)
         return user
-
 
     def create_superuser(self, username, name, email, password):
         user = self.create_user(
@@ -32,7 +34,6 @@ class UserManager(BaseUserManager):
         user.is_superuser = True
         user.save(using=self._db)
         return user
-
 
 
 class Funcionario(AbstractBaseUser, PermissionsMixin, BaseModel):
@@ -60,7 +61,6 @@ class Funcionario(AbstractBaseUser, PermissionsMixin, BaseModel):
         verbose_name = "usuário"
         verbose_name_plural = "usuários"
         ordering = ["-id"]
-     
+
     def __str__(self):
         return self.username
-

@@ -9,7 +9,7 @@ from apps.venda.views.produto_views import (
     ProdutoListView,
     ProdutoUpdateView,
     ProdutoDeleteView,
-    get_produto_value
+    get_produto_value,
 )
 
 __all__ = [

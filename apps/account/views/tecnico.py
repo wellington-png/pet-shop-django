@@ -9,50 +9,51 @@ from django.urls import reverse_lazy
 class TecnicoCreateView(LoginRequiredMixin, CreateView):
     model = Tecnico
     form_class = TecnicoForm
-    template_name = 'tecnico/create.html'
-    success_url = reverse_lazy('apps:account:tecnico_list')
-    login_url = reverse_lazy('apps:core:home')
+    template_name = "tecnico/create.html"
+    success_url = reverse_lazy("apps:account:tecnico_list")
+    login_url = reverse_lazy("apps:core:home")
     success_message = "Tecnico criado com sucesso."
-    
+
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context['title'] = 'Novo Tecnico'
+        context["title"] = "Novo Tecnico"
         return context
+
 
 class TecnicoUpdateView(LoginRequiredMixin, UpdateView):
     model = Tecnico
     form_class = TecnicoForm
-    template_name = 'tecnico/update.html'
-    success_url = reverse_lazy('apps:account:tecnico_list')
-    login_url = reverse_lazy('apps:core:home')
+    template_name = "tecnico/update.html"
+    success_url = reverse_lazy("apps:account:tecnico_list")
+    login_url = reverse_lazy("apps:core:home")
     success_message = "Tecnico atualizado com sucesso."
-    
+
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context['title'] = 'Atualizar Tecnico'
+        context["title"] = "Atualizar Tecnico"
         return context
+
 
 class TecnicoDeleteView(LoginRequiredMixin, DeleteView):
     model = Tecnico
-    template_name = 'tecnico/delete.html'
-    success_url = reverse_lazy('apps:account:tecnico_list')
-    login_url = reverse_lazy('apps:core:home')
+    template_name = "tecnico/delete.html"
+    success_url = reverse_lazy("apps:account:tecnico_list")
+    login_url = reverse_lazy("apps:core:home")
     success_message = "Tecnico excluido com sucesso."
-    
+
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context['title'] = 'Excluir Tecnico'
+        context["title"] = "Excluir Tecnico"
         return context
-    
+
 
 class TecnicoListView(LoginRequiredMixin, ListView):
     model = Tecnico
-    template_name = 'tecnico/list.html'
-    login_url = reverse_lazy('apps:core:home')
-    context_object_name = 'tecnicos'
-    
-    
+    template_name = "tecnico/list.html"
+    login_url = reverse_lazy("apps:core:home")
+    context_object_name = "tecnicos"
+
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context['title'] = 'Listar Tecnicos'
+        context["title"] = "Listar Tecnicos"
         return context

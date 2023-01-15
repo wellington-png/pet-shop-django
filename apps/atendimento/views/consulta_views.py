@@ -9,11 +9,13 @@ from django.contrib.auth.mixins import LoginRequiredMixin
 
 class ConsultaCreateView(LoginRequiredMixin, CreateView):
     model = ItemConsulta
-    template_name = 'consulta_create.html'
-    success_url = reverse_lazy('apps:atendimento:consulta_list')
+    template_name = "consulta_create.html"
+    success_url = reverse_lazy("apps:atendimento:consulta_list")
     form_class = ConsultaForm
 
-    item_order_formset = inlineformset_factory(Consulta, ItemConsulta, form=ItemConsultaForm, extra=1, can_delete=True)
+    item_order_formset = inlineformset_factory(
+        Consulta, ItemConsulta, form=ItemConsultaForm, extra=1, can_delete=True
+    )
 
     def form_valid(self, form):
         self.object = form.save()
@@ -26,27 +28,28 @@ class ConsultaCreateView(LoginRequiredMixin, CreateView):
 
     def get_context_data(self, **kwargs):
         context = super(ConsultaCreateView, self).get_context_data(**kwargs)
-        context['formitem'] = self.item_order_formset(instance=self.object)
-        context['title'] = 'Cadastrar Serviço'
-        context['action'] = 'add'
+        context["formitem"] = self.item_order_formset(instance=self.object)
+        context["title"] = "Cadastrar Serviço"
+        context["action"] = "add"
         return context
-    
-    
+
 
 class ConsultaListView(LoginRequiredMixin, ListView):
     model = Consulta
-    template_name = 'consulta_list.html'
-    context_object_name = 'consultas'
+    template_name = "consulta_list.html"
+    context_object_name = "consultas"
     paginate_by = 10
 
 
 class ConsultaUpdateView(LoginRequiredMixin, UpdateView):
     model = Consulta
-    template_name = 'consulta_create_up.html'
-    success_url = reverse_lazy('apps:atendimento:consulta_list')
+    template_name = "consulta_create_up.html"
+    success_url = reverse_lazy("apps:atendimento:consulta_list")
     form_class = ConsultaForm
 
-    item_order_formset = inlineformset_factory(Consulta, ItemConsulta, form=ItemConsultaForm, extra=1, can_delete=True)
+    item_order_formset = inlineformset_factory(
+        Consulta, ItemConsulta, form=ItemConsultaForm, extra=1, can_delete=True
+    )
 
     def form_valid(self, form):
         self.object = form.save()
@@ -59,15 +62,16 @@ class ConsultaUpdateView(LoginRequiredMixin, UpdateView):
 
     def get_context_data(self, **kwargs):
         context = super(ConsultaUpdateView, self).get_context_data(**kwargs)
-        context['formitem'] = self.item_order_formset(instance=self.object)
-        context['title'] = 'Editar Serviço'
-        context['action'] = 'edit'
+        context["formitem"] = self.item_order_formset(instance=self.object)
+        context["title"] = "Editar Serviço"
+        context["action"] = "edit"
         return context
+
 
 class ConsultaDeleteView(LoginRequiredMixin, DeleteView):
     model = Consulta
-    template_name = 'consulta_delete.html'
-    success_url = reverse_lazy('apps:atendimento:consulta_list')
+    template_name = "consulta_delete.html"
+    success_url = reverse_lazy("apps:atendimento:consulta_list")
 
     def delete(self, request, *args, **kwargs):
         self.object = self.get_object()
@@ -76,6 +80,6 @@ class ConsultaDeleteView(LoginRequiredMixin, DeleteView):
 
     def get_context_data(self, **kwargs):
         context = super(ConsultaDeleteView, self).get_context_data(**kwargs)
-        context['title'] = 'Remover Serviço'
-        context['action'] = 'delete'
+        context["title"] = "Remover Serviço"
+        context["action"] = "delete"
         return context

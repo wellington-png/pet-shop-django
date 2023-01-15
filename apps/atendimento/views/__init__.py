@@ -15,7 +15,7 @@ from apps.atendimento.views.tipo_servico_views import (
     TipoServicoListView,
     TipoServicoUpdateView,
     TipoServicoDeleteView,
-    get_servico_value
+    get_servico_value,
 )
 
 __all__ = [
@@ -31,5 +31,5 @@ __all__ = [
     "TipoServicoListView",
     "TipoServicoUpdateView",
     "TipoServicoDeleteView",
-    "get_servico_value"
+    "get_servico_value",
 ]

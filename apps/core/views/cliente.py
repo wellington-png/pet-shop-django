@@ -13,7 +13,7 @@ class ClienteListView(LoginRequiredMixin, ListView):
     paginate_by = 10
     queryset = Cliente.objects.all()
     ordering = ["-id"]
-    
+
     def get_context_data(self, **kwargs):
         context = super(ClienteListView, self).get_context_data(**kwargs)
         context["title"] = "Clientes"
@@ -24,7 +24,7 @@ class ClienteCreateView(LoginRequiredMixin, CreateView):
     model = Cliente
     form_class = ClienteForm
     template_name = "clientes/clientes_form.html"
-    success_url = reverse_lazy('apps:core:cliente_list')
+    success_url = reverse_lazy("apps:core:cliente_list")
 
     def get_context_data(self, **kwargs):
         context = super(ClienteCreateView, self).get_context_data(**kwargs)
@@ -36,8 +36,7 @@ class ClienteUpdateView(LoginRequiredMixin, UpdateView):
     model = Cliente
     form_class = ClienteForm
     template_name = "clientes/clientes_edit.html"
-    success_url = reverse_lazy('apps:core:cliente_list')
-    
+    success_url = reverse_lazy("apps:core:cliente_list")
 
     def get_context_data(self, **kwargs):
         context = super(ClienteUpdateView, self).get_context_data(**kwargs)
@@ -48,10 +47,9 @@ class ClienteUpdateView(LoginRequiredMixin, UpdateView):
 class ClienteDeleteView(LoginRequiredMixin, DeleteView):
     model = Cliente
     template_name = "clientes/clientes_delete.html"
-    success_url = reverse_lazy('apps:core:cliente_list')
+    success_url = reverse_lazy("apps:core:cliente_list")
 
     def get_context_data(self, **kwargs):
         context = super(ClienteDeleteView, self).get_context_data(**kwargs)
         context["title"] = "Excluir Cliente"
         return context
-    

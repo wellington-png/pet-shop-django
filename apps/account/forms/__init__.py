@@ -4,5 +4,4 @@ from apps.account.forms.tecnico_form import TecnicoForm
 from apps.account.forms.atendente_form import AtendenteForm
 
 
-
-__all__ = ['UserDashCreationForm', 'VeterinarioForm', 'TecnicoForm', 'AtendenteForm']
+__all__ = ["UserDashCreationForm", "VeterinarioForm", "TecnicoForm", "AtendenteForm"]
