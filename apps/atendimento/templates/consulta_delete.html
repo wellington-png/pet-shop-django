@@ -1,0 +1,26 @@
+{%extends "base.html"%}
+
+{% load static %}
+
+{%block content%}
+
+<div class="col-md-12 grid-margin stretch-card ">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">Delete</h4>
+            <form class="forms-sample" method="post" action="{%url 'apps:atendimento:consulta_delete' object.id %}">
+                {% csrf_token %}
+                <div class="form-group
+                    <label for="nome">Nome</label>
+                    <input type="text" class="form-control" id="nome" name="nome" value="{{object}}" disabled>
+
+                </div>
+                <button type="submit" class="btn btn-danger mr-2">Deletar</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+{%endblock%}
+
+{%block sidebar%} {% include 'partials/sidebar.html' %} {%endblock%}

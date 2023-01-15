@@ -7,39 +7,46 @@
         <span class="menu-title">Dashboard</span>
       </a>
     </li>
+    <li class="nav-item">
+      <a class="nav-link" href="">
+        <i class="mdi mdi mdi-cash-100 menu-icon"></i>
+        <span class="menu-title">Caixa</span>
+      </a>
+    </li>
     <li class="nav-item nav-category">Cliente e pet</li>
     <li class="nav-item">
       <a class="nav-link" data-bs-toggle="collapse" href="#cli" aria-expanded="false" aria-controls="cli">
         <i class="menu-icon mdi mdi mdi-account-group"></i>
         <span class="menu-title">Cliente</span>
-        <i class="menu-arrow"></i> 
+        <i class="menu-arrow"></i>
       </a>
       <div class="collapse" id="cli">
         <ul class="nav flex-column sub-menu">
-          <li class="nav-item"> <a class="nav-link" href="{% url 'apps:core:cliente_create' %}">Cadastrar cliente</a></li>
-          <li class="nav-item"> <a class="nav-link" href="{% url 'apps:core:cliente_list' %}">Listar clinete</a></li>
+          <li class="nav-item"> <a class="nav-link" href="{% url 'apps:core:cliente_create' %}">Cadastrar cliente</a>
+          </li>
+          <li class="nav-item"> <a class="nav-link" href="{% url 'apps:core:cliente_list' %}">Listar cliente</a></li>
         </ul>
       </div>
-      <li class="nav-item">
-        <a class="nav-link" data-bs-toggle="collapse" href="#pet" aria-expanded="false" aria-controls="pet">
-          <i class="menu-icon mdi mdi mdi-dog"></i>
-          <span class="menu-title">PET</span>
-          <i class="menu-arrow"></i>
-        </a>
-        <div class="collapse" id="pet">
-          <ul class="nav flex-column sub-menu">
-            <li class="nav-item"> <a class="nav-link" href="{% url 'apps:core:pet_create' %}"> Cadastrar pet </a></li>
-            <li class="nav-item"> <a class="nav-link" href="{% url 'apps:core:pet_list' %}"> Listar pet </a></li>
-          </ul>
-        </div>
-      </li>
+    <li class="nav-item">
+      <a class="nav-link" data-bs-toggle="collapse" href="#pet" aria-expanded="false" aria-controls="pet">
+        <i class="menu-icon mdi mdi mdi-dog"></i>
+        <span class="menu-title">PET</span>
+        <i class="menu-arrow"></i>
+      </a>
+      <div class="collapse" id="pet">
+        <ul class="nav flex-column sub-menu">
+          <li class="nav-item"> <a class="nav-link" href="{% url 'apps:core:pet_create' %}"> Cadastrar pet </a></li>
+          <li class="nav-item"> <a class="nav-link" href="{% url 'apps:core:pet_list' %}"> Listar pet </a></li>
+        </ul>
+      </div>
+    </li>
     </li>
     <li class="nav-item nav-category">Vendas de produtos</li>
     <li class="nav-item">
       <a class="nav-link" data-bs-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
         <i class="menu-icon mdi mdi mdi-cash"></i>
         <span class="menu-title">Vendas</span>
-        <i class="menu-arrow"></i> 
+        <i class="menu-arrow"></i>
       </a>
       <div class="collapse" id="ui-basic">
         <ul class="nav flex-column sub-menu">
@@ -47,31 +54,36 @@
           <li class="nav-item"> <a class="nav-link" href="{% url 'apps:venda:compra_list' %}">Listar venda</a></li>
         </ul>
       </div>
-      <li class="nav-item">
-        <a class="nav-link" data-bs-toggle="collapse" href="#products" aria-expanded="false" aria-controls="products">
-          <i class="menu-icon mdi mdi mdi-cards-outline"></i>
-          <span class="menu-title">Produtos</span>
-          <i class="menu-arrow"></i>
-        </a>
-        <div class="collapse" id="products">
-          <ul class="nav flex-column sub-menu">
-            <li class="nav-item"> <a class="nav-link" href="{% url 'apps:venda:produto_create' %}"> Cadastrar produto </a></li>
-            <li class="nav-item"> <a class="nav-link" href="{% url 'apps:venda:produto_list' %}"> Listar produtos </a></li>
-          </ul>
-        </div>
-      </li>
+    <li class="nav-item">
+      <a class="nav-link" data-bs-toggle="collapse" href="#products" aria-expanded="false" aria-controls="products">
+        <i class="menu-icon mdi mdi mdi-cards-outline"></i>
+        <span class="menu-title">Produtos</span>
+        <i class="menu-arrow"></i>
+      </a>
+      <div class="collapse" id="products">
+        <ul class="nav flex-column sub-menu">
+          <li class="nav-item"> <a class="nav-link" href="{% url 'apps:venda:produto_create' %}"> Cadastrar produto </a>
+          </li>
+          <li class="nav-item"> <a class="nav-link" href="{% url 'apps:venda:produto_list' %}"> Listar produtos </a>
+          </li>
+        </ul>
+      </div>
+    </li>
     </li>
     <li class="nav-item nav-category">Serviços e Consultas</li>
     <li class="nav-item">
-      <a class="nav-link" data-bs-toggle="collapse" href="#form-elements" aria-expanded="false" aria-controls="form-elements">
+      <a class="nav-link" data-bs-toggle="collapse" href="#form-elements" aria-expanded="false"
+        aria-controls="form-elements">
         <i class="menu-icon mdi mdi-card-text-outline"></i>
         <span class="menu-title">Consulta</span>
         <i class="menu-arrow"></i>
       </a>
       <div class="collapse" id="form-elements">
         <ul class="nav flex-column sub-menu">
-          <li class="nav-item"><a class="nav-link" href="{% url 'apps:atendimento:consulta_create' %}">Cadastrar consulta</a></li>
-          <li class="nav-item"><a class="nav-link" href="{% url 'apps:atendimento:consulta_list' %}">Listar consultas</a></li>
+          <li class="nav-item"><a class="nav-link" href="{% url 'apps:atendimento:consulta_create' %}">Cadastrar
+              consulta</a></li>
+          <li class="nav-item"><a class="nav-link" href="{% url 'apps:atendimento:consulta_list' %}">Listar
+              consultas</a></li>
         </ul>
       </div>
     </li>
@@ -84,21 +96,26 @@
       </a>
       <div class="collapse" id="icons">
         <ul class="nav flex-column sub-menu">
-          <li class="nav-item"> <a class="nav-link" href="{% url 'apps:atendimento:servico_create' %}">Cadastrar serviço</a></li>
-          <li class="nav-item"> <a class="nav-link" href="{% url 'apps:atendimento:servico_list' %}">Listar serviço</a></li>
+          <li class="nav-item"> <a class="nav-link" href="{% url 'apps:atendimento:servico_create' %}">Cadastrar
+              serviço</a></li>
+          <li class="nav-item"> <a class="nav-link" href="{% url 'apps:atendimento:servico_list' %}">Listar serviço</a>
+          </li>
         </ul>
       </div>
     </li>
     <li class="nav-item">
-      <a class="nav-link" data-bs-toggle="collapse" href="#type_servece" aria-expanded="false" aria-controls="type_servece">
+      <a class="nav-link" data-bs-toggle="collapse" href="#type_servece" aria-expanded="false"
+        aria-controls="type_servece">
         <i class="menu-icon mdi mdi mdi-wallet-giftcard"></i>
         <span class="menu-title">Tipo de Serviço</span>
         <i class="menu-arrow"></i>
       </a>
       <div class="collapse" id="type_servece">
         <ul class="nav flex-column sub-menu">
-          <li class="nav-item"> <a class="nav-link" href="{% url 'apps:atendimento:tipo_servico_create' %}"> Cadastrar tipo de serviço </a></li>
-          <li class="nav-item"> <a class="nav-link" href="{% url 'apps:atendimento:tipo_servico_list' %}"> Listar tipo de serviço </a></li>
+          <li class="nav-item"> <a class="nav-link" href="{% url 'apps:atendimento:tipo_servico_create' %}"> Cadastrar
+              tipo de serviço </a></li>
+          <li class="nav-item"> <a class="nav-link" href="{% url 'apps:atendimento:tipo_servico_list' %}"> Listar tipo
+              de serviço </a></li>
         </ul>
       </div>
     </li>
@@ -106,6 +123,7 @@
     <li class="nav-item nav-category">Funcionarios</li>
     <li class="nav-item">
       <a class="nav-link" data-bs-toggle="collapse" href="#aten" aria-expanded="false" aria-controls="aten">
+        <i class="menu-icon mdi mdi-headset"></i>
         <span class="menu-title">Atendente</span>
         <i class="menu-arrow"></i>
       </a>
@@ -118,24 +136,29 @@
     </li>
     <li class="nav-item">
       <a class="nav-link" data-bs-toggle="collapse" href="#tec" aria-expanded="false" aria-controls="tec">
+        <i class="menu-icon mdi mdi-worker"></i>
+
         <span class="menu-title">Tecnico</span>
         <i class="menu-arrow"></i>
       </a>
       <div class="collapse" id="tec">
         <ul class="nav flex-column sub-menu">
-          <li class="nav-item"> <a class="nav-link" href="{% url 'apps:account:tecnico_create' %}"> Cadastrar  </a></li>
+          <li class="nav-item"> <a class="nav-link" href="{% url 'apps:account:tecnico_create' %}"> Cadastrar </a></li>
           <li class="nav-item"> <a class="nav-link" href="{% url 'apps:account:tecnico_list' %}"> Listar </a></li>
         </ul>
       </div>
     </li>
     <li class="nav-item">
-      <a class="nav-link" data-bs-toggle="collapse" href="#veterinario" aria-expanded="false" aria-controls="veterinario">
+      <a class="nav-link" data-bs-toggle="collapse" href="#veterinario" aria-expanded="false"
+        aria-controls="veterinario">
+        <i class="menu-icon mdi mdi mdi-heart"></i>
         <span class="menu-title">Veterinario</span>
         <i class="menu-arrow"></i>
       </a>
       <div class="collapse" id="veterinario">
         <ul class="nav flex-column sub-menu">
-          <li class="nav-item"> <a class="nav-link" href="{% url 'apps:account:veterinario_create' %}"> Cadastrar  </a></li>
+          <li class="nav-item"> <a class="nav-link" href="{% url 'apps:account:veterinario_create' %}"> Cadastrar </a>
+          </li>
           <li class="nav-item"> <a class="nav-link" href="{% url 'apps:account:veterinario_list' %}"> Listar </a></li>
         </ul>
       </div>

@@ -1,7 +1,7 @@
 from django.views.generic import CreateView, ListView,UpdateView, DeleteView
 from django.forms import inlineformset_factory
 from django.shortcuts import redirect
-
+from django.urls import reverse_lazy
 from apps.atendimento.models import Servico, ItemServico
 from apps.atendimento.forms import ServicoForm, ItemServicoForm
 from django.contrib.auth.mixins import LoginRequiredMixin
@@ -11,7 +11,7 @@ class ServicoCreateView(LoginRequiredMixin, CreateView):
     model = Servico
     form_class = ServicoForm
     template_name = 'servico_create.html'
-    success_url = '/servico/list'
+    success_url = reverse_lazy('apps:atendimento:servico_list')
 
     item_order_formset = inlineformset_factory(Servico, ItemServico, form=ItemServicoForm, extra=1, can_delete=True)
 
@@ -43,7 +43,7 @@ class ServicoUpdateView(LoginRequiredMixin, UpdateView):
     model = Servico
     form_class = ServicoForm
     template_name = 'servico_create_up.html'
-    success_url = '/servico/list'
+    success_url = reverse_lazy('apps:atendimento:servico_list')
 
     item_order_formset = inlineformset_factory(Servico, ItemServico, form=ItemServicoForm, extra=1, can_delete=True)
 
@@ -67,7 +67,7 @@ class ServicoUpdateView(LoginRequiredMixin, UpdateView):
 class ServicoDeleteView(LoginRequiredMixin, DeleteView):
     model = Servico
     template_name = 'servico_delete.html'
-    success_url = '/servico/list'
+    success_url = reverse_lazy('apps:atendimento:servico_list')
 
     def get_context_data(self, **kwargs):
         context = super(ServicoDeleteView, self).get_context_data(**kwargs)

@@ -67,7 +67,7 @@
                       <a class="dropdown-item" href="{% url 'apps:atendimento:servico_update' servico.id %}">
                         editar
                       </a>
-                      <a class="dropdown-item" href="#">apagar</a>
+                      <a class="dropdown-item" href="{% url 'apps:atendimento:servico_delete' servico.id %}">apagar</a>
                     </div>
                   </div>
                 </td>

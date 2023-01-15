@@ -44,6 +44,17 @@ class ProdutoUpdateView(LoginRequiredMixin, UpdateView):
         context['title_complete'] = "Produto"
         return context
 
+class ProdutoDeleteView(LoginRequiredMixin, DeleteView):
+    model = Produto
+    success_url = reverse_lazy('apps:venda:produto_list')
+    template_name = "produto_delete.html"
+
+    def get_context_data(self, **kwargs):
+        context = super(ProdutoDeleteView, self).get_context_data(**kwargs)
+        context['title_complete'] = "Produto"
+        return context
+
+
 def get_produto_value(request, pk):
     produto = Produto.objects.get(pk=pk)
     return JsonResponse(

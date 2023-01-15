@@ -10,7 +10,7 @@ class Consulta(BaseModel):
     diagnostico = TextField(verbose_name='Diagnóstico')
     tratamento = TextField(verbose_name='Tratamento')
     data_consulta = DateField(verbose_name='Data da Consulta')
-    valor_total = DecimalField(max_digits=5, decimal_places=2, verbose_name='Valor Total')
+    valor_total = DecimalField(max_digits=18, decimal_places=2, verbose_name='Valor Total')
 
     class Meta:
         verbose_name = 'Consulta'
@@ -22,6 +22,5 @@ class Consulta(BaseModel):
 
     @property
     def valor_consulta(self):
-        print(dir(self))
         return self.itemconsulta_set.all().aggregate(valor_total=Sum('valor_item'))['valor_total'] + self.valor_total
 

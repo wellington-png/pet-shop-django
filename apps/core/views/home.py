@@ -3,8 +3,9 @@ from django.views.generic import TemplateView
 from django.shortcuts import render, redirect
 from django.db.models import Sum
 from apps.venda.models import Compra, ItemCompra
-from apps.atendimento.models import Servico, Consulta, ItemServico, ItemConsulta
+from apps.atendimento.models import Servico, Consulta
 from django.contrib.auth.mixins import LoginRequiredMixin
+from django.http import JsonResponse
 from django.utils.timezone import now
 
 
@@ -57,3 +58,16 @@ class HomeView(LoginRequiredMixin, TemplateView):
         context["list_consultas"] = Consulta.objects.all().order_by("-id")[:7]
 
         return context
+
+def value_week(request):
+    date = now().date()
+    start_week = date - datetime.timedelta(date.weekday())
+    lista_consulta = []
+    print('CHAMOUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU')
+    lista_servico = []
+    for i in range(7):
+        date = start_week + datetime.timedelta(i)
+        lista_consulta.append(Consulta.objects.filter(created_at__date=date).count())
+        lista_servico.append(Servico.objects.filter(created_at__date=date).count())
+    
+    return JsonResponse({"lista_consulta": lista_consulta, "lista_servico": lista_servico})

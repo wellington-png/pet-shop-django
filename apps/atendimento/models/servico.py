@@ -7,7 +7,7 @@ class Servico(BaseModel):
     pet = ForeignKey('core.Pet', verbose_name='Pet', on_delete=CASCADE)
     tecnico = ForeignKey('account.Tecnico', verbose_name='Técnico', on_delete=CASCADE)
     data_servico = DateField(verbose_name='Data do Serviço')
-    valor_total = DecimalField(max_digits=5, decimal_places=2, verbose_name='Valor Total')
+    valor_total = DecimalField(max_digits=18, decimal_places=2, verbose_name='Valor Total')
 
     class Meta:
         verbose_name = 'Serviço'

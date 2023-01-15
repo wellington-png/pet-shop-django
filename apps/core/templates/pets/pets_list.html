@@ -81,10 +81,10 @@
                     <i class="mdi mdi-chevron-down"></i>
                   </button>
                   <div class="dropdown-menu" aria-labelledby="dropdownMenuIconButton3">
-                    <a class="dropdown-item" href="">
+                    <a class="dropdown-item" href="{% url 'apps:core:pet_update' pet.id %}">
                       editar
                     </a>
-                    <a class="dropdown-item" href="#">apagar</a>
+                    <a class="dropdown-item" href="{% url 'apps:core:pet_delete' pet.id %}">apagar</a>
                   </div>
                 </div>
               </td>

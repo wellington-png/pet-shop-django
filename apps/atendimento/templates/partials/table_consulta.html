@@ -67,7 +67,7 @@
                     <a class="dropdown-item" href="{% url 'apps:atendimento:consulta_update' consulta.id %}">
                       editar
                     </a>
-                    <a class="dropdown-item" href="#">apagar</a>
+                    <a class="dropdown-item" href="{% url 'apps:atendimento:consulta_delete' consulta.id %}">apagar</a>
                   </div>
                 </div>
               </td>

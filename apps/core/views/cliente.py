@@ -35,8 +35,9 @@ class ClienteCreateView(LoginRequiredMixin, CreateView):
 class ClienteUpdateView(LoginRequiredMixin, UpdateView):
     model = Cliente
     form_class = ClienteForm
-    template_name = "clientes/clientes_form.html"
+    template_name = "clientes/clientes_edit.html"
     success_url = reverse_lazy('apps:core:cliente_list')
+    
 
     def get_context_data(self, **kwargs):
         context = super(ClienteUpdateView, self).get_context_data(**kwargs)

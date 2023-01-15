@@ -1,7 +1,7 @@
 from django.views.generic import CreateView, ListView, UpdateView, DeleteView
 from django.forms import inlineformset_factory
 from django.shortcuts import redirect
-
+from django.urls import reverse_lazy
 from apps.venda.models import Compra, ItemCompra
 from apps.venda.forms import CompraForm, ItemCompraForm
 from django.contrib.auth.mixins import LoginRequiredMixin
@@ -11,8 +11,7 @@ class CompraCreateView(LoginRequiredMixin, CreateView):
     model = Compra
     form_class = CompraForm
     template_name = 'compra_create.html'
-    success_url = '/compra/list'
-
+    success_url = reverse_lazy('apps:venda:compra_list')
 
     formitem = inlineformset_factory(Compra, ItemCompra, form=ItemCompraForm, extra=1, can_delete=True)
 
@@ -44,7 +43,7 @@ class CompraUpdateView(LoginRequiredMixin, UpdateView):
     model = Compra
     form_class = CompraForm
     template_name = 'compra_create_up.html'
-    success_url = '/compra/list'
+    success_url = reverse_lazy('apps:venda:compra_list')
 
     item_order_formset = inlineformset_factory(Compra, ItemCompra, form=ItemCompraForm, extra=1, can_delete=True, min_num=1)
 
@@ -68,6 +67,6 @@ class CompraUpdateView(LoginRequiredMixin, UpdateView):
 class CompraDeleteView(LoginRequiredMixin, DeleteView):
     model = Compra
     template_name = 'compra_delete.html'
-    success_url = '/compra/list'
+    success_url = reverse_lazy('apps:venda:compra_list')
     
 

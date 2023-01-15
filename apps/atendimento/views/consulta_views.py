@@ -1,6 +1,7 @@
 from django.views.generic import CreateView, UpdateView, ListView, DeleteView
 from apps.atendimento.forms import ConsultaForm, ItemConsultaForm
 from django.shortcuts import redirect
+from django.urls import reverse_lazy
 from apps.atendimento.models import Consulta, ItemConsulta
 from django.forms import inlineformset_factory
 from django.contrib.auth.mixins import LoginRequiredMixin
@@ -9,7 +10,7 @@ from django.contrib.auth.mixins import LoginRequiredMixin
 class ConsultaCreateView(LoginRequiredMixin, CreateView):
     model = ItemConsulta
     template_name = 'consulta_create.html'
-    success_url = '/consulta/list'
+    success_url = reverse_lazy('apps:atendimento:consulta_list')
     form_class = ConsultaForm
 
     item_order_formset = inlineformset_factory(Consulta, ItemConsulta, form=ItemConsultaForm, extra=1, can_delete=True)
@@ -42,7 +43,7 @@ class ConsultaListView(LoginRequiredMixin, ListView):
 class ConsultaUpdateView(LoginRequiredMixin, UpdateView):
     model = Consulta
     template_name = 'consulta_create_up.html'
-    success_url = '/consulta/list'
+    success_url = reverse_lazy('apps:atendimento:consulta_list')
     form_class = ConsultaForm
 
     item_order_formset = inlineformset_factory(Consulta, ItemConsulta, form=ItemConsultaForm, extra=1, can_delete=True)
@@ -66,7 +67,7 @@ class ConsultaUpdateView(LoginRequiredMixin, UpdateView):
 class ConsultaDeleteView(LoginRequiredMixin, DeleteView):
     model = Consulta
     template_name = 'consulta_delete.html'
-    success_url = '/consulta/list'
+    success_url = reverse_lazy('apps:atendimento:consulta_list')
 
     def delete(self, request, *args, **kwargs):
         self.object = self.get_object()

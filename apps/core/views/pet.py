@@ -50,7 +50,7 @@ class PetUpdateView(LoginRequiredMixin, UpdateView):
 
 class PetDeleteView(LoginRequiredMixin, DeleteView):
     model = Pet
-    template_name = "pets/pets_confirm_delete.html"
+    template_name = "pets/pets_delete.html"
     success_url = reverse_lazy('apps:core:pet_list')
 
     def get_context_data(self, **kwargs):
